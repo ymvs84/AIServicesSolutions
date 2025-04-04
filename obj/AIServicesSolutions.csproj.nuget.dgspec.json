@@ -1,0 +1,99 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\yms84\\OneDrive\\Yago\\Informatica\\Experis\\Desarrollo Junior Cloud Azure\\Proyectos\\Proyecto04\\Entregas\\Parceros\\AIServicesSolutions\\AIServicesSolutions.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\yms84\\OneDrive\\Yago\\Informatica\\Experis\\Desarrollo Junior Cloud Azure\\Proyectos\\Proyecto04\\Entregas\\Parceros\\AIServicesSolutions\\AIServicesSolutions.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\yms84\\OneDrive\\Yago\\Informatica\\Experis\\Desarrollo Junior Cloud Azure\\Proyectos\\Proyecto04\\Entregas\\Parceros\\AIServicesSolutions\\AIServicesSolutions.csproj",
+        "projectName": "AIServicesSolutions",
+        "projectPath": "C:\\Users\\yms84\\OneDrive\\Yago\\Informatica\\Experis\\Desarrollo Junior Cloud Azure\\Proyectos\\Proyecto04\\Entregas\\Parceros\\AIServicesSolutions\\AIServicesSolutions.csproj",
+        "packagesPath": "C:\\Users\\yms84\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\yms84\\OneDrive\\Yago\\Informatica\\Experis\\Desarrollo Junior Cloud Azure\\Proyectos\\Proyecto04\\Entregas\\Parceros\\AIServicesSolutions\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\yms84\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Azure.AI.TextAnalytics": {
+              "target": "Package",
+              "version": "[5.3.0, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

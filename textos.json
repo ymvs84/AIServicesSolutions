@@ -1,0 +1,20 @@
+[
+  {
+    "Texto": "Hello people",
+    "Idioma": "English",
+    "Confianza": 1,
+    "Fecha": "2025-04-04T08:27:30.8688397-07:00"
+  },
+  {
+    "Texto": "Hola people",
+    "Idioma": "English",
+    "Confianza": 1,
+    "Fecha": "2025-04-04T08:27:47.4872982-07:00"
+  },
+  {
+    "Texto": "Hola gente",
+    "Idioma": "Spanish",
+    "Confianza": 1,
+    "Fecha": "2025-04-04T08:28:02.2181902-07:00"
+  }
+]
