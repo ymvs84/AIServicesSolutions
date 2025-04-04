@@ -23,8 +23,3 @@ En esta fase inicial, el almacenamiento de datos se realizará localmente.  La i
     * Se determina el idioma del texto.
     * Se almacena la palabra más repetida en el texto.
     * Se permite consultar la cantidad de textos introducidos para un idioma específico, con un porcentaje mínimo de probabilidad, así como las palabras más utilizadas en esos textos.
-
-
-## Azure AI Junior Programmers - Proyecto 04: AI Services Solutions (Resumen)
-
-Este documento describe las mismas funcionalidades que el documento anterior, pero dirigido a los programadores junior.  Se asume que el detalle técnico ya ha sido cubierto en el documento para los desarrolladores senior.
