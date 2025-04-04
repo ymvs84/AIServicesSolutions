@@ -2,7 +2,7 @@
 
 ## Alcance
 
-Este proyecto requiere la implementación de varios prototipos para integrar aplicaciones de cliente con los servicios de IA de Azure.  Los prototipos se desarrollarán en Python y C#, priorizando la reutilización de código mediante la implementación de clases.
+Este proyecto requiere la implementación de varios prototipos para integrar aplicaciones de cliente con los servicios de IA de Azure.  Los prototipos se desarrollarán en C#, priorizando la reutilización de código mediante la implementación de clases.
 
 En esta fase inicial, el almacenamiento de datos se realizará localmente.  La integración con almacenamiento en la nube se implementará en etapas posteriores de pre-producción.  Los prototipos se implementarán en releases sucesivas, manteniendo la reutilización de código a través de las clases.
 
