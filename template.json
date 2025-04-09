@@ -1,0 +1,19 @@
+{
+    "id": "/subscriptions/9376d04d-3f3a-4e5c-84e9-b849cb1db321/resourceGroups/ResourceGroup1",
+    "name": "ResourceGroup1",
+    "type": "Microsoft.Resources/resourceGroups",
+    "location": "uksouth",
+    "tags": {
+        "LODManaged": "lod",
+        "LabProfile": "181538",
+        "PoolOrgId": "363",
+        "ProfileOrgId": "363",
+        "LabInstance": "50174029",
+        "TS": "133886819273825943",
+        "SeriesId": "35225"
+    },
+    "properties": {
+        "provisioningState": "Succeeded"
+    },
+    "apiVersion":"2020-06-01"
+}
