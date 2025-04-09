@@ -47,6 +47,7 @@ namespace sdk_client
                 // Bucle principal del menú, se continúa hasta que el usuario elija "4" para salir.
                 while (opcion != "4")
                 {
+                    Console.Clear();
                     Console.WriteLine("\n--- Menú ---");
                     Console.WriteLine("1. Ingresar texto (escrito o hablado)");
                     Console.WriteLine("2. Consultar textos por idioma");
@@ -59,6 +60,7 @@ namespace sdk_client
                     {
                         // Caso 1: Ingresar texto manualmente o mediante el micrófono.
                         case "1":
+                            Console.Clear();
                             Console.WriteLine("\n--- Submenú Entrada ---");
                             Console.WriteLine("1. Escribir texto");
                             Console.WriteLine("2. Hablar por micrófono");
@@ -77,6 +79,8 @@ namespace sdk_client
                             else
                             {
                                 Console.WriteLine("Opción inválida.");
+                                Console.WriteLine("\nPresiona cualquier tecla para volver al menú principal...");
+                                Console.ReadKey();
                                 break;
                             }
                             // Si se ingresó algún texto, se detecta el idioma y se guarda junto con la información.
@@ -94,14 +98,32 @@ namespace sdk_client
                                     PalabraMasRepetida = "" // Puedes implementar el cálculo si lo requieres.
                                 };
                                 GuardarTexto(nuevoTexto);
+                                Console.WriteLine("\nTexto guardado correctamente.");
+                                Console.WriteLine("\nPresiona cualquier tecla para volver al menú principal...");
+                                Console.ReadKey();
                             }
                             break;
                         // Caso 2: Consultar textos guardados por idioma.
                         case "2":
+                            Console.Clear();
+                            Console.WriteLine("\n--- Consulta por Idioma ---");
+
+                            // Mostrar idiomas disponibles
+                            List<TextoRegistrado> todosTextos = LeerTextos();
+                            var idiomasDisponibles = todosTextos.Select(t => t.Idioma).Distinct().ToList();
+
+                            if (idiomasDisponibles.Count > 0)
+                            {
+                                Console.WriteLine("Idiomas disponibles:");
+                                foreach (var idioma in idiomasDisponibles)
+                                {
+                                    Console.WriteLine($"- {idioma}");
+                                }
+                            }
+
                             Console.Write("\nIntroduce el idioma a consultar (ej. English, Spanish): ");
                             string idiomaBuscado = Console.ReadLine();
-                            List<TextoRegistrado> textos = LeerTextos();
-                            var filtrados = textos.FindAll(t =>
+                            var filtrados = todosTextos.FindAll(t =>
                                 t.Idioma.Equals(idiomaBuscado, StringComparison.OrdinalIgnoreCase)
                             );
                             Console.WriteLine($"\nSe encontraron {filtrados.Count} texto(s) en {idiomaBuscado}:\n");
@@ -113,10 +135,18 @@ namespace sdk_client
                             {
                                 Console.WriteLine("No hay textos registrados para ese idioma.");
                             }
+
+                            Console.WriteLine("\nPresiona cualquier tecla para volver al menú principal...");
+                            Console.ReadKey();
                             break;
                         // Caso 3: Procesar imágenes para detectar texto.
                         case "3":
+                            Console.Clear();
+                            Console.WriteLine("\n--- Detector de Texto en Imágenes ---");
                             await ProcesarImagenes();
+
+                            Console.WriteLine("\nPresiona cualquier tecla para volver al menú principal...");
+                            Console.ReadKey();
                             break;
                         // Caso 4: Salir del programa.
                         case "4":
@@ -124,6 +154,8 @@ namespace sdk_client
                             break;
                         default:
                             Console.WriteLine("Opción inválida, intenta de nuevo.");
+                            Console.WriteLine("\nPresiona cualquier tecla para continuar...");
+                            Console.ReadKey();
                             break;
                     }
                 }
@@ -131,35 +163,60 @@ namespace sdk_client
             catch (Exception ex)
             {
                 Console.WriteLine("Error en el programa: " + ex.Message);
+                Console.WriteLine("\nPresiona cualquier tecla para salir...");
+                Console.ReadKey();
             }
         }
 
         // Método para detectar el idioma de un texto dado usando Azure Text Analytics.
         static (string Idioma, double Confianza) GetLanguage(string text)
         {
-            AzureKeyCredential credentials = new AzureKeyCredential(AISvcKey);
-            Uri endpoint = new Uri(AISvcEndpoint);
-            var client = new TextAnalyticsClient(endpoint, credentials);
-            DetectedLanguage detectedLanguage = client.DetectLanguage(text);
-            return (detectedLanguage.Name, detectedLanguage.ConfidenceScore);
+            try
+            {
+                AzureKeyCredential credentials = new AzureKeyCredential(AISvcKey);
+                Uri endpoint = new Uri(AISvcEndpoint);
+                var client = new TextAnalyticsClient(endpoint, credentials);
+                DetectedLanguage detectedLanguage = client.DetectLanguage(text);
+                return (detectedLanguage.Name, detectedLanguage.ConfidenceScore);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error al detectar el idioma: {ex.Message}");
+                return ("Desconocido", 0.0);
+            }
         }
 
         // Método para guardar un objeto TextoRegistrado en el archivo JSON.
         static void GuardarTexto(TextoRegistrado nuevo)
         {
-            List<TextoRegistrado> textos = LeerTextos();
-            textos.Add(nuevo);
-            string json = JsonSerializer.Serialize(textos, new JsonSerializerOptions { WriteIndented = true });
-            File.WriteAllText(jsonFilePath, json);
+            try
+            {
+                List<TextoRegistrado> textos = LeerTextos();
+                textos.Add(nuevo);
+                string json = JsonSerializer.Serialize(textos, new JsonSerializerOptions { WriteIndented = true });
+                File.WriteAllText(jsonFilePath, json);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error al guardar el texto: {ex.Message}");
+            }
         }
 
         // Método para leer los textos registrados desde el archivo JSON.
         static List<TextoRegistrado> LeerTextos()
         {
-            if (!File.Exists(jsonFilePath))
+            try
+            {
+                if (!File.Exists(jsonFilePath))
+                    return new List<TextoRegistrado>();
+                string json = File.ReadAllText(jsonFilePath);
+                return JsonSerializer.Deserialize<List<TextoRegistrado>>(json) ?? new List<TextoRegistrado>();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error al leer el archivo JSON: {ex.Message}");
                 return new List<TextoRegistrado>();
-            string json = File.ReadAllText(jsonFilePath);
-            return JsonSerializer.Deserialize<List<TextoRegistrado>>(json) ?? new List<TextoRegistrado>();
+            }
         }
 
         // Método para transcribir voz a texto usando el micrófono y el servicio de voz de Azure.
@@ -195,10 +252,19 @@ namespace sdk_client
                     return;
                 }
                 // Se buscan archivos JPEG y PNG en la carpeta.
-                var archivos = Directory.GetFiles(carpeta, "*.jpg").Concat(Directory.GetFiles(carpeta, "*.png"));
+                var archivos = Directory.GetFiles(carpeta, "*.jpg").Concat(Directory.GetFiles(carpeta, "*.png")).ToArray();
+
+                if (archivos.Length == 0)
+                {
+                    Console.WriteLine("No se encontraron imágenes (JPG o PNG) en la carpeta especificada.");
+                    return;
+                }
+
+                Console.WriteLine($"\nSe encontraron {archivos.Length} imágenes para procesar.");
+
                 foreach (var archivo in archivos)
                 {
-                    Console.WriteLine($"Procesando {archivo}...");
+                    Console.WriteLine($"\nProcesando {Path.GetFileName(archivo)}...");
                     await ProcesarImagen(archivo);
                 }
             }
@@ -233,46 +299,48 @@ namespace sdk_client
                     Console.WriteLine($"Idioma detectado: {resultadoIdioma.Idioma} ({resultadoIdioma.Confianza * 100:F1}%)");
 
                     // Se abre la imagen usando System.Drawing para dibujar bounding boxes.
-                    System.Drawing.Image imagen = System.Drawing.Image.FromFile(path);
-                    Graphics graphics = Graphics.FromImage(imagen);
-                    Pen pen = new Pen(Color.Cyan, 3);
-
-                    // Recorrer cada bloque y cada línea detectada.
-                    foreach (var block in result.Read.Blocks)
+                    using (System.Drawing.Image imagen = System.Drawing.Image.FromFile(path))
+                    using (Graphics graphics = Graphics.FromImage(imagen))
+                    using (Pen pen = new Pen(Color.Cyan, 3))
                     {
-                        foreach (var line in block.Lines)
+                        // Recorrer cada bloque y cada línea detectada.
+                        foreach (var block in result.Read.Blocks)
                         {
-                            Console.WriteLine($"   '{line.Text}'");
-                            Console.WriteLine($"   Bounding Polygon: [{string.Join(" ", line.BoundingPolygon)}]");
-
-                            // Se dibuja un polígono alrededor de la línea.
-                            Point[] polygonLine = {
-                                new Point((int)line.BoundingPolygon[0].X, (int)line.BoundingPolygon[0].Y),
-                                new Point((int)line.BoundingPolygon[1].X, (int)line.BoundingPolygon[1].Y),
-                                new Point((int)line.BoundingPolygon[2].X, (int)line.BoundingPolygon[2].Y),
-                                new Point((int)line.BoundingPolygon[3].X, (int)line.BoundingPolygon[3].Y)
-                            };
-                            graphics.DrawPolygon(pen, polygonLine);
-
-                            // Se recorre cada palabra de la línea y se dibujan sus bounding boxes.
-                            foreach (var word in line.Words)
+                            foreach (var line in block.Lines)
                             {
-                                Console.WriteLine($"     Word: '{word.Text}', Confidence {word.Confidence:F4}, Bounding Polygon: [{string.Join(" ", word.BoundingPolygon)}]");
-                                Point[] polygonWord = {
-                                    new Point((int)word.BoundingPolygon[0].X, (int)word.BoundingPolygon[0].Y),
-                                    new Point((int)word.BoundingPolygon[1].X, (int)word.BoundingPolygon[1].Y),
-                                    new Point((int)word.BoundingPolygon[2].X, (int)word.BoundingPolygon[2].Y),
-                                    new Point((int)word.BoundingPolygon[3].X, (int)word.BoundingPolygon[3].Y)
+                                Console.WriteLine($"   '{line.Text}'");
+                                Console.WriteLine($"   Bounding Polygon: [{string.Join(" ", line.BoundingPolygon)}]");
+
+                                // Se dibuja un polígono alrededor de la línea.
+                                Point[] polygonLine = {
+                                    new Point((int)line.BoundingPolygon[0].X, (int)line.BoundingPolygon[0].Y),
+                                    new Point((int)line.BoundingPolygon[1].X, (int)line.BoundingPolygon[1].Y),
+                                    new Point((int)line.BoundingPolygon[2].X, (int)line.BoundingPolygon[2].Y),
+                                    new Point((int)line.BoundingPolygon[3].X, (int)line.BoundingPolygon[3].Y)
                                 };
-                                graphics.DrawPolygon(pen, polygonWord);
+                                graphics.DrawPolygon(pen, polygonLine);
+
+                                // Se recorre cada palabra de la línea y se dibujan sus bounding boxes.
+                                foreach (var word in line.Words)
+                                {
+                                    Console.WriteLine($"     Word: '{word.Text}', Confidence {word.Confidence:F4}, Bounding Polygon: [{string.Join(" ", word.BoundingPolygon)}]");
+                                    Point[] polygonWord = {
+                                        new Point((int)word.BoundingPolygon[0].X, (int)word.BoundingPolygon[0].Y),
+                                        new Point((int)word.BoundingPolygon[1].X, (int)word.BoundingPolygon[1].Y),
+                                        new Point((int)word.BoundingPolygon[2].X, (int)word.BoundingPolygon[2].Y),
+                                        new Point((int)word.BoundingPolygon[3].X, (int)word.BoundingPolygon[3].Y)
+                                    };
+                                    graphics.DrawPolygon(pen, polygonWord);
+                                }
                             }
                         }
-                    }
 
-                    // Se guarda la imagen con anotaciones en un nuevo archivo.
-                    string output_file = "text.jpg";
-                    imagen.Save(output_file);
-                    Console.WriteLine($"Resultados guardados en {output_file}\n");
+                        // Se guarda la imagen con anotaciones en un nuevo archivo con nombre único.
+                        string fileName = Path.GetFileNameWithoutExtension(path);
+                        string output_file = $"{fileName}_anotado_{DateTime.Now:yyyyMMddHHmmss}.jpg";
+                        imagen.Save(output_file);
+                        Console.WriteLine($"Resultados guardados en {output_file}");
+                    }
 
                     // Se crea un objeto TextoRegistrado y se guarda en el JSON.
                     TextoRegistrado nuevoTexto = new TextoRegistrado
@@ -281,13 +349,14 @@ namespace sdk_client
                         Idioma = resultadoIdioma.Idioma,
                         Confianza = resultadoIdioma.Confianza,
                         Fecha = DateTime.Now,
-                        PalabraMasRepetida = "" // Opcional: se puede calcular la palabra más repetida.
+                        PalabraMasRepetida = CalcularPalabraMasRepetida(textoDetectado)
                     };
                     GuardarTexto(nuevoTexto);
+                    Console.WriteLine("Texto de la imagen guardado correctamente.");
                 }
                 else
                 {
-                    Console.WriteLine("No se pudo analizar la imagen.");
+                    Console.WriteLine("No se pudo analizar la imagen o no se detectó texto.");
                 }
             }
             catch (Exception ex)
@@ -295,6 +364,30 @@ namespace sdk_client
                 Console.WriteLine($"Error al procesar la imagen {path}: {ex.Message}");
             }
             await Task.CompletedTask;
+        }
+
+        // Método para calcular la palabra más repetida en un texto
+        static string CalcularPalabraMasRepetida(string texto)
+        {
+            try
+            {
+                // Separar el texto en palabras, eliminar signos de puntuación
+                var palabras = texto.Split(new[] { ' ', '.', ',', ';', '!', '?', ':', '"', '\'', '(', ')', '[', ']', '{', '}' },
+                    StringSplitOptions.RemoveEmptyEntries)
+                    .Where(p => p.Length > 2) // Filtrar palabras cortas (como "el", "la", etc.)
+                    .Select(p => p.ToLower()); // Convertir a minúsculas para no distinguir mayúsculas/minúsculas
+
+                // Agrupar por palabra y contar ocurrencias
+                var agrupadas = palabras.GroupBy(p => p)
+                    .OrderByDescending(g => g.Count())
+                    .Take(1);
+
+                return agrupadas.Any() ? agrupadas.First().Key : "";
+            }
+            catch
+            {
+                return "";
+            }
         }
     }
 
