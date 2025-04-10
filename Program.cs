@@ -16,13 +16,13 @@ namespace sdk_client
 {
     class Program
     {
-        // Variables globales para almacenar las configuraciones de los servicios de Azure.
+    // Variables globales para almacenar las configuraciones de los servicios de Azure.
         // Estas se cargarán desde appsettings.json en tiempo de ejecución.
-        private static string AISvcEndpoint;
-        private static string AISvcKey;
-        private static string SpeechKey;
-        private static string SpeechRegion;
-        private static SpeechConfig speechConfig;
+        private static string AISvcEndpoint = string.Empty;
+        private static string AISvcKey = string.Empty;
+        private static string SpeechKey = string.Empty;
+        private static string SpeechRegion = string.Empty;
+        private static SpeechConfig? speechConfig;
 
         // Ruta del archivo JSON donde se guardarán los textos registrados.
         private static string jsonFilePath = "textos.json";
@@ -95,7 +95,7 @@ namespace sdk_client
                                     Idioma = resultadoIdioma.Idioma,
                                     Confianza = resultadoIdioma.Confianza,
                                     Fecha = DateTime.Now,
-                                    PalabraMasRepetida = "" // Puedes implementar el cálculo si lo requieres.
+                                    PalabraMasRepetida = string.Empty // Puedes implementar el cálculo si lo requieres.
                                 };
                                 GuardarTexto(nuevoTexto);
                                 Console.WriteLine("\nTexto guardado correctamente.");
@@ -272,66 +272,68 @@ namespace sdk_client
             {
                 Console.WriteLine("Error al procesar las imágenes: " + ex.Message);
             }
-        }
-
-        // Método para procesar una imagen individual y extraer el texto.
+        }        // Método para procesar una imagen individual y extraer el texto.
         // Incluye manejo de excepciones para que, si ocurre un error, se muestre el mensaje y continúe.
         static async Task ProcesarImagen(string path)
         {
             try
-            {
-                // Se crea el cliente de Azure AI Vision para analizar la imagen.
-                ImageAnalysisClient client = new ImageAnalysisClient(
-                    new Uri(AISvcEndpoint),
-                    new AzureKeyCredential(AISvcKey));
-
-                // Se abre el stream de la imagen y se analiza con la función Analyze,
-                // indicando que se requiere el feature VisualFeatures.Read.
+            {                // Se crea el cliente de Azure AI Vision para analizar la imagen.
+                var credential = new AzureKeyCredential(AISvcKey);
+                
+                // Configuramos las opciones para el análisis de imágenes
+                var analysisOptions = new ImageAnalysisOptions
+                {
+                    Features = ImageAnalysisFeature.Text, // En la versión 0.15.1-beta.1, es Text, no Read
+                    Language = "es"
+                };                // Se abre el stream de la imagen para su análisis
                 using var imageStream = File.OpenRead(path);
-                ImageAnalysisResult result = client.Analyze(BinaryData.FromStream(imageStream), VisualFeatures.Read);
+                var imageBytes = BinaryData.FromStream(imageStream);
+                
+                // En la versión 0.15.1-beta.1, creamos el objeto ImageAnalyzer y luego llamamos a su método AnalyzeAsync
+                var endpoint = new Uri(AISvcEndpoint);
+                var serviceOptions = new Azure.AI.Vision.Common.VisionServiceOptions(endpoint, credential);
+                // Crear VisionSource directamente del archivo en lugar de FromStream
+                var imageSource = Azure.AI.Vision.Common.VisionSource.FromFile(path);
+                var analyzer = new ImageAnalyzer(serviceOptions, imageSource, analysisOptions);
+                var result = await analyzer.AnalyzeAsync();
 
-                // Si se detectó texto en la imagen:
-                if (result.Read != null)
+                // Verificamos si se detectó texto en la imagen (en esta versión, es Text, no Read)
+                if (result.Text != null)
                 {
                     // Se une todo el texto extraído en una sola cadena.
-                    string textoDetectado = string.Join(" ", result.Read.Blocks.SelectMany(block => block.Lines.Select(line => line.Text)));
-                    var resultadoIdioma = GetLanguage(textoDetectado);
+                    string textoDetectado = string.Join(" ", result.Text.Lines.Select(line => line.Content));                    var resultadoIdioma = GetLanguage(textoDetectado);
                     Console.WriteLine($"Idioma detectado: {resultadoIdioma.Idioma} ({resultadoIdioma.Confianza * 100:F1}%)");
 
                     // Se abre la imagen usando System.Drawing para dibujar bounding boxes.
                     using (System.Drawing.Image imagen = System.Drawing.Image.FromFile(path))
                     using (Graphics graphics = Graphics.FromImage(imagen))
                     using (Pen pen = new Pen(Color.Cyan, 3))
-                    {
-                        // Recorrer cada bloque y cada línea detectada.
-                        foreach (var block in result.Read.Blocks)
+                    {                        // En la versión 0.15.1-beta.1, Text tiene Lines directamente
+                        foreach (var line in result.Text.Lines)
                         {
-                            foreach (var line in block.Lines)
+                            Console.WriteLine($"   '{line.Content}'"); // En esta versión es Content, no Text
+                            Console.WriteLine($"   Bounding Polygon: [{string.Join(" ", line.BoundingPolygon)}]");
+
+                            // Se dibuja un polígono alrededor de la línea.
+                            Point[] polygonLine = {
+                                new Point((int)line.BoundingPolygon[0].X, (int)line.BoundingPolygon[0].Y),
+                                new Point((int)line.BoundingPolygon[1].X, (int)line.BoundingPolygon[1].Y),
+                                new Point((int)line.BoundingPolygon[2].X, (int)line.BoundingPolygon[2].Y),
+                                new Point((int)line.BoundingPolygon[3].X, (int)line.BoundingPolygon[3].Y)
+                            };
+                            graphics.DrawPolygon(pen, polygonLine);
+
+                            // Se recorre cada palabra de la línea y se dibujan sus bounding boxes.
+                            foreach (var word in line.Words)
                             {
-                                Console.WriteLine($"   '{line.Text}'");
-                                Console.WriteLine($"   Bounding Polygon: [{string.Join(" ", line.BoundingPolygon)}]");
-
-                                // Se dibuja un polígono alrededor de la línea.
-                                Point[] polygonLine = {
-                                    new Point((int)line.BoundingPolygon[0].X, (int)line.BoundingPolygon[0].Y),
-                                    new Point((int)line.BoundingPolygon[1].X, (int)line.BoundingPolygon[1].Y),
-                                    new Point((int)line.BoundingPolygon[2].X, (int)line.BoundingPolygon[2].Y),
-                                    new Point((int)line.BoundingPolygon[3].X, (int)line.BoundingPolygon[3].Y)
+                                Console.WriteLine($"     Word: '{word.Content}', Confidence {word.Confidence:F4}, Bounding Polygon: [{string.Join(" ", word.BoundingPolygon)}]");
+                                Point[] polygonWord = {
+                                    new Point((int)word.BoundingPolygon[0].X, (int)word.BoundingPolygon[0].Y),
+                                    new Point((int)word.BoundingPolygon[1].X, (int)word.BoundingPolygon[1].Y),
+                                    new Point((int)word.BoundingPolygon[2].X, (int)word.BoundingPolygon[2].Y),
+                                    new Point((int)word.BoundingPolygon[3].X, (int)word.BoundingPolygon[3].Y)
                                 };
-                                graphics.DrawPolygon(pen, polygonLine);
-
-                                // Se recorre cada palabra de la línea y se dibujan sus bounding boxes.
-                                foreach (var word in line.Words)
-                                {
-                                    Console.WriteLine($"     Word: '{word.Text}', Confidence {word.Confidence:F4}, Bounding Polygon: [{string.Join(" ", word.BoundingPolygon)}]");
-                                    Point[] polygonWord = {
-                                        new Point((int)word.BoundingPolygon[0].X, (int)word.BoundingPolygon[0].Y),
-                                        new Point((int)word.BoundingPolygon[1].X, (int)word.BoundingPolygon[1].Y),
-                                        new Point((int)word.BoundingPolygon[2].X, (int)word.BoundingPolygon[2].Y),
-                                        new Point((int)word.BoundingPolygon[3].X, (int)word.BoundingPolygon[3].Y)
-                                    };
-                                    graphics.DrawPolygon(pen, polygonWord);
-                                }
+                                graphics.DrawPolygon(pen, polygonWord);
                             }
                         }
 
@@ -389,15 +391,13 @@ namespace sdk_client
                 return "";
             }
         }
-    }
-
-    // Clase que representa un texto registrado con sus propiedades.
+    }    // Clase que representa un texto registrado con sus propiedades.
     class TextoRegistrado
     {
-        public string Texto { get; set; }
-        public string Idioma { get; set; }
+        public string Texto { get; set; } = string.Empty;
+        public string Idioma { get; set; } = string.Empty;
         public double Confianza { get; set; }
         public DateTime Fecha { get; set; }
-        public string PalabraMasRepetida { get; set; }
+        public string PalabraMasRepetida { get; set; } = string.Empty;
     }
 }

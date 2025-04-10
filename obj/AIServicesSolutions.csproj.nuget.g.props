@@ -12,4 +12,9 @@
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <SourceRoot Include="C:\Users\yms84\.nuget\packages\" />
   </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)microsoft.cognitiveservices.speech\1.31.0\build\Microsoft.CognitiveServices.Speech.props" Condition="Exists('$(NuGetPackageRoot)microsoft.cognitiveservices.speech\1.31.0\build\Microsoft.CognitiveServices.Speech.props')" />
+    <Import Project="$(NuGetPackageRoot)azure.ai.vision.common\0.15.1-beta.1\build\Azure.AI.Vision.Common.props" Condition="Exists('$(NuGetPackageRoot)azure.ai.vision.common\0.15.1-beta.1\build\Azure.AI.Vision.Common.props')" />
+    <Import Project="$(NuGetPackageRoot)azure.ai.vision.imageanalysis\0.15.1-beta.1\build\Azure.AI.Vision.ImageAnalysis.props" Condition="Exists('$(NuGetPackageRoot)azure.ai.vision.imageanalysis\0.15.1-beta.1\build\Azure.AI.Vision.ImageAnalysis.props')" />
+  </ImportGroup>
 </Project>

@@ -30,3 +30,12 @@ C:\Users\Student\ReleaseV1\AIServicesSolutiones\obj\Debug\net7.0\AIServicesSolut
 C:\Users\Student\ReleaseV1\AIServicesSolutiones\obj\Debug\net7.0\AIServicesSolutions.genruntimeconfig.cache
 C:\Users\Student\ReleaseV1\AIServicesSolutiones\obj\Debug\net7.0\ref\AIServicesSolutions.dll
 C:\Users\Student\ReleaseV1\AIServicesSolutiones\bin\Debug\net7.0\appsettings.json
+C:\Users\yms84\OneDrive\Desktop\C#\AIServicesSolutions\obj\Debug\net7.0\AIServicesSolutions.csproj.AssemblyReference.cache
+C:\Users\yms84\OneDrive\Desktop\C#\AIServicesSolutions\obj\Debug\net7.0\AIServicesSolutions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yms84\OneDrive\Desktop\C#\AIServicesSolutions\obj\Debug\net7.0\AIServicesSolutions.AssemblyInfoInputs.cache
+C:\Users\yms84\OneDrive\Desktop\C#\AIServicesSolutions\obj\Debug\net7.0\AIServicesSolutions.AssemblyInfo.cs
+C:\Users\yms84\OneDrive\Desktop\C#\AIServicesSolutions\obj\Debug\net7.0\AIServicesSolutions.csproj.CoreCompileInputs.cache
+C:\Users\yms84\OneDrive\Desktop\C#\AIServicesSolutions\obj\Debug\net7.0\AIServicesSolutions.sourcelink.json
+C:\Users\yms84\OneDrive\Desktop\C#\AIServicesSolutions\obj\Debug\net7.0\AIServicesSolutions.dll
+C:\Users\yms84\OneDrive\Desktop\C#\AIServicesSolutions\obj\Debug\net7.0\refint\AIServicesSolutions.dll
+C:\Users\yms84\OneDrive\Desktop\C#\AIServicesSolutions\obj\Debug\net7.0\AIServicesSolutions.pdb

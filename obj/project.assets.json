@@ -20,6 +20,229 @@
           }
         }
       },
+      "Azure.AI.Vision.Common/0.15.1-beta.1": {
+        "type": "package",
+        "dependencies": {
+          "Azure.Core": "1.20.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Azure.AI.Vision.Common.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Azure.AI.Vision.Common.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/Azure.AI.Vision.Common.props": {}
+        },
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libAzure-AI-Vision-Input-Device.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x64/native/libAzure-AI-Vision-Input-File.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x64/native/libAzure-AI-Vision-Native.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x64/native/libVision_Core.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x64/native/libVision_Media.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x64/native/libVision_Media_VideoIngester.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x64/native/libavcodec.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x64/native/libavcodec.so.58": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x64/native/libavcodec.so.58.35.100": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x64/native/libavdevice.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x64/native/libavdevice.so.58": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x64/native/libavdevice.so.58.5.100": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x64/native/libavfilter.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x64/native/libavfilter.so.7": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x64/native/libavfilter.so.7.40.101": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x64/native/libavformat.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x64/native/libavformat.so.58": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x64/native/libavformat.so.58.20.100": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x64/native/libavutil.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x64/native/libavutil.so.56": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x64/native/libavutil.so.56.22.100": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x64/native/libswresample.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x64/native/libswresample.so.3": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x64/native/libswresample.so.3.3.100": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x64/native/libswscale.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x64/native/libswscale.so.5": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x64/native/libswscale.so.5.3.100": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/win-ARM64/native/Azure-AI-Vision-Input-Device.dll": {
+            "assetType": "native",
+            "rid": "win-ARM64"
+          },
+          "runtimes/win-ARM64/native/Azure-AI-Vision-Native.dll": {
+            "assetType": "native",
+            "rid": "win-ARM64"
+          },
+          "runtimes/win-x64/native/Azure-AI-Vision-Input-Device.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/Azure-AI-Vision-Input-File.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/Azure-AI-Vision-Native.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/Vision_Core.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/Vision_Media.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/Vision_Media_VideoIngester.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/avcodec-58.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/avdevice-58.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/avfilter-7.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/avformat-58.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/avutil-56.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/swresample-3.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/swscale-5.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/turbojpeg.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          }
+        }
+      },
+      "Azure.AI.Vision.ImageAnalysis/0.15.1-beta.1": {
+        "type": "package",
+        "dependencies": {
+          "Azure.AI.Vision.Common": "[0.15.1-beta.1]",
+          "Azure.Core": "1.20.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Azure.AI.Vision.ImageAnalysis.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Azure.AI.Vision.ImageAnalysis.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/Azure.AI.Vision.ImageAnalysis.props": {}
+        },
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libAzure-AI-Vision-Extension-Image.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/win-x64/native/Azure-AI-Vision-Extension-Image.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          }
+        }
+      },
       "Azure.Core/1.33.0": {
         "type": "package",
         "dependencies": {
@@ -42,7 +265,7 @@
           }
         }
       },
-      "Microsoft.Bcl.AsyncInterfaces/9.0.3": {
+      "Microsoft.Bcl.AsyncInterfaces/9.0.4": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {
@@ -58,11 +281,373 @@
           "buildTransitive/netcoreapp2.0/Microsoft.Bcl.AsyncInterfaces.targets": {}
         }
       },
-      "Microsoft.Extensions.Configuration/9.0.3": {
+      "Microsoft.CognitiveServices.Speech/1.31.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.CognitiveServices.Speech.csharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.CognitiveServices.Speech.csharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/Microsoft.CognitiveServices.Speech.props": {}
+        },
+        "runtimeTargets": {
+          "runtimes/android-arm/native/libMicrosoft.CognitiveServices.Speech.core.so": {
+            "assetType": "native",
+            "rid": "android-arm"
+          },
+          "runtimes/android-arm/native/libMicrosoft.CognitiveServices.Speech.extension.audio.sys.so": {
+            "assetType": "native",
+            "rid": "android-arm"
+          },
+          "runtimes/android-arm/native/libMicrosoft.CognitiveServices.Speech.extension.kws.ort.so": {
+            "assetType": "native",
+            "rid": "android-arm"
+          },
+          "runtimes/android-arm/native/libMicrosoft.CognitiveServices.Speech.extension.kws.so": {
+            "assetType": "native",
+            "rid": "android-arm"
+          },
+          "runtimes/android-arm/native/libMicrosoft.CognitiveServices.Speech.extension.lu.so": {
+            "assetType": "native",
+            "rid": "android-arm"
+          },
+          "runtimes/android-arm64/native/libMicrosoft.CognitiveServices.Speech.core.so": {
+            "assetType": "native",
+            "rid": "android-arm64"
+          },
+          "runtimes/android-arm64/native/libMicrosoft.CognitiveServices.Speech.extension.audio.sys.so": {
+            "assetType": "native",
+            "rid": "android-arm64"
+          },
+          "runtimes/android-arm64/native/libMicrosoft.CognitiveServices.Speech.extension.kws.ort.so": {
+            "assetType": "native",
+            "rid": "android-arm64"
+          },
+          "runtimes/android-arm64/native/libMicrosoft.CognitiveServices.Speech.extension.kws.so": {
+            "assetType": "native",
+            "rid": "android-arm64"
+          },
+          "runtimes/android-arm64/native/libMicrosoft.CognitiveServices.Speech.extension.lu.so": {
+            "assetType": "native",
+            "rid": "android-arm64"
+          },
+          "runtimes/android-x64/native/libMicrosoft.CognitiveServices.Speech.core.so": {
+            "assetType": "native",
+            "rid": "android-x64"
+          },
+          "runtimes/android-x64/native/libMicrosoft.CognitiveServices.Speech.extension.audio.sys.so": {
+            "assetType": "native",
+            "rid": "android-x64"
+          },
+          "runtimes/android-x64/native/libMicrosoft.CognitiveServices.Speech.extension.kws.ort.so": {
+            "assetType": "native",
+            "rid": "android-x64"
+          },
+          "runtimes/android-x64/native/libMicrosoft.CognitiveServices.Speech.extension.kws.so": {
+            "assetType": "native",
+            "rid": "android-x64"
+          },
+          "runtimes/android-x64/native/libMicrosoft.CognitiveServices.Speech.extension.lu.so": {
+            "assetType": "native",
+            "rid": "android-x64"
+          },
+          "runtimes/android-x86/native/libMicrosoft.CognitiveServices.Speech.core.so": {
+            "assetType": "native",
+            "rid": "android-x86"
+          },
+          "runtimes/android-x86/native/libMicrosoft.CognitiveServices.Speech.extension.audio.sys.so": {
+            "assetType": "native",
+            "rid": "android-x86"
+          },
+          "runtimes/android-x86/native/libMicrosoft.CognitiveServices.Speech.extension.kws.ort.so": {
+            "assetType": "native",
+            "rid": "android-x86"
+          },
+          "runtimes/android-x86/native/libMicrosoft.CognitiveServices.Speech.extension.kws.so": {
+            "assetType": "native",
+            "rid": "android-x86"
+          },
+          "runtimes/android-x86/native/libMicrosoft.CognitiveServices.Speech.extension.lu.so": {
+            "assetType": "native",
+            "rid": "android-x86"
+          },
+          "runtimes/centos7-x64/native/libMicrosoft.CognitiveServices.Speech.core.so": {
+            "assetType": "native",
+            "rid": "centos7-x64"
+          },
+          "runtimes/centos7-x64/native/libMicrosoft.CognitiveServices.Speech.extension.audio.sys.so": {
+            "assetType": "native",
+            "rid": "centos7-x64"
+          },
+          "runtimes/centos7-x64/native/libMicrosoft.CognitiveServices.Speech.extension.codec.so": {
+            "assetType": "native",
+            "rid": "centos7-x64"
+          },
+          "runtimes/centos7-x64/native/libMicrosoft.CognitiveServices.Speech.extension.kws.ort.so": {
+            "assetType": "native",
+            "rid": "centos7-x64"
+          },
+          "runtimes/centos7-x64/native/libMicrosoft.CognitiveServices.Speech.extension.kws.so": {
+            "assetType": "native",
+            "rid": "centos7-x64"
+          },
+          "runtimes/centos7-x64/native/libMicrosoft.CognitiveServices.Speech.extension.lu.so": {
+            "assetType": "native",
+            "rid": "centos7-x64"
+          },
+          "runtimes/centos7-x64/native/libMicrosoft.CognitiveServices.Speech.extension.mas.so": {
+            "assetType": "native",
+            "rid": "centos7-x64"
+          },
+          "runtimes/ios-arm64/native/libMicrosoft.CognitiveServices.Speech.core.a": {
+            "assetType": "native",
+            "rid": "ios-arm64"
+          },
+          "runtimes/iossimulator-arm64/native/libMicrosoft.CognitiveServices.Speech.core.a": {
+            "assetType": "native",
+            "rid": "iossimulator-arm64"
+          },
+          "runtimes/iossimulator-x64/native/libMicrosoft.CognitiveServices.Speech.core.a": {
+            "assetType": "native",
+            "rid": "iossimulator-x64"
+          },
+          "runtimes/linux-arm/lib/netstandard2.0/Microsoft.CognitiveServices.Speech.csharp.dll": {
+            "assetType": "runtime",
+            "rid": "linux-arm"
+          },
+          "runtimes/linux-arm/native/libMicrosoft.CognitiveServices.Speech.core.so": {
+            "assetType": "native",
+            "rid": "linux-arm"
+          },
+          "runtimes/linux-arm/native/libMicrosoft.CognitiveServices.Speech.extension.audio.sys.so": {
+            "assetType": "native",
+            "rid": "linux-arm"
+          },
+          "runtimes/linux-arm/native/libMicrosoft.CognitiveServices.Speech.extension.codec.so": {
+            "assetType": "native",
+            "rid": "linux-arm"
+          },
+          "runtimes/linux-arm/native/libMicrosoft.CognitiveServices.Speech.extension.kws.ort.so": {
+            "assetType": "native",
+            "rid": "linux-arm"
+          },
+          "runtimes/linux-arm/native/libMicrosoft.CognitiveServices.Speech.extension.kws.so": {
+            "assetType": "native",
+            "rid": "linux-arm"
+          },
+          "runtimes/linux-arm/native/libMicrosoft.CognitiveServices.Speech.extension.lu.so": {
+            "assetType": "native",
+            "rid": "linux-arm"
+          },
+          "runtimes/linux-arm/native/libMicrosoft.CognitiveServices.Speech.extension.mas.so": {
+            "assetType": "native",
+            "rid": "linux-arm"
+          },
+          "runtimes/linux-arm64/lib/netstandard2.0/Microsoft.CognitiveServices.Speech.csharp.dll": {
+            "assetType": "runtime",
+            "rid": "linux-arm64"
+          },
+          "runtimes/linux-arm64/native/libMicrosoft.CognitiveServices.Speech.core.so": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          },
+          "runtimes/linux-arm64/native/libMicrosoft.CognitiveServices.Speech.extension.audio.sys.so": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          },
+          "runtimes/linux-arm64/native/libMicrosoft.CognitiveServices.Speech.extension.codec.so": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          },
+          "runtimes/linux-arm64/native/libMicrosoft.CognitiveServices.Speech.extension.kws.ort.so": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          },
+          "runtimes/linux-arm64/native/libMicrosoft.CognitiveServices.Speech.extension.kws.so": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          },
+          "runtimes/linux-arm64/native/libMicrosoft.CognitiveServices.Speech.extension.lu.so": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          },
+          "runtimes/linux-arm64/native/libMicrosoft.CognitiveServices.Speech.extension.mas.so": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          },
+          "runtimes/linux-x64/lib/netstandard2.0/Microsoft.CognitiveServices.Speech.csharp.dll": {
+            "assetType": "runtime",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x64/native/libMicrosoft.CognitiveServices.Speech.core.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x64/native/libMicrosoft.CognitiveServices.Speech.extension.audio.sys.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x64/native/libMicrosoft.CognitiveServices.Speech.extension.codec.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x64/native/libMicrosoft.CognitiveServices.Speech.extension.kws.ort.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x64/native/libMicrosoft.CognitiveServices.Speech.extension.kws.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x64/native/libMicrosoft.CognitiveServices.Speech.extension.lu.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x64/native/libMicrosoft.CognitiveServices.Speech.extension.mas.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/maccatalyst-arm64/native/libMicrosoft.CognitiveServices.Speech.core.a": {
+            "assetType": "native",
+            "rid": "maccatalyst-arm64"
+          },
+          "runtimes/maccatalyst-x64/native/libMicrosoft.CognitiveServices.Speech.core.a": {
+            "assetType": "native",
+            "rid": "maccatalyst-x64"
+          },
+          "runtimes/osx-arm64/lib/netstandard2.0/Microsoft.CognitiveServices.Speech.csharp.dll": {
+            "assetType": "runtime",
+            "rid": "osx-arm64"
+          },
+          "runtimes/osx-arm64/native/libMicrosoft.CognitiveServices.Speech.core.dylib": {
+            "assetType": "native",
+            "rid": "osx-arm64"
+          },
+          "runtimes/osx-x64/lib/netstandard2.0/Microsoft.CognitiveServices.Speech.csharp.dll": {
+            "assetType": "runtime",
+            "rid": "osx-x64"
+          },
+          "runtimes/osx-x64/native/libMicrosoft.CognitiveServices.Speech.core.dylib": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          },
+          "runtimes/win-x64/native/Microsoft.CognitiveServices.Speech.core.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/Microsoft.CognitiveServices.Speech.extension.audio.sys.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/Microsoft.CognitiveServices.Speech.extension.codec.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/Microsoft.CognitiveServices.Speech.extension.kws.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/Microsoft.CognitiveServices.Speech.extension.kws.ort.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/Microsoft.CognitiveServices.Speech.extension.lu.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/Microsoft.CognitiveServices.Speech.extension.mas.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/Microsoft.CognitiveServices.Speech.core.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/Microsoft.CognitiveServices.Speech.extension.audio.sys.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/Microsoft.CognitiveServices.Speech.extension.codec.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/Microsoft.CognitiveServices.Speech.extension.kws.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/Microsoft.CognitiveServices.Speech.extension.kws.ort.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/Microsoft.CognitiveServices.Speech.extension.lu.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/Microsoft.CognitiveServices.Speech.extension.mas.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win10-arm/native/Microsoft.CognitiveServices.Speech.core.dll": {
+            "assetType": "native",
+            "rid": "win10-arm"
+          },
+          "runtimes/win10-arm/native/Microsoft.CognitiveServices.Speech.extension.audio.sys.dll": {
+            "assetType": "native",
+            "rid": "win10-arm"
+          },
+          "runtimes/win10-arm/native/Microsoft.CognitiveServices.Speech.extension.kws.dll": {
+            "assetType": "native",
+            "rid": "win10-arm"
+          },
+          "runtimes/win10-arm/native/Microsoft.CognitiveServices.Speech.extension.kws.ort.dll": {
+            "assetType": "native",
+            "rid": "win10-arm"
+          },
+          "runtimes/win10-arm/native/Microsoft.CognitiveServices.Speech.extension.lu.dll": {
+            "assetType": "native",
+            "rid": "win10-arm"
+          },
+          "runtimes/win10-arm/native/Microsoft.CognitiveServices.Speech.extension.mas.dll": {
+            "assetType": "native",
+            "rid": "win10-arm"
+          },
+          "runtimes/win10-arm64/native/Microsoft.CognitiveServices.Speech.core.dll": {
+            "assetType": "native",
+            "rid": "win10-arm64"
+          },
+          "runtimes/win10-arm64/native/Microsoft.CognitiveServices.Speech.extension.audio.sys.dll": {
+            "assetType": "native",
+            "rid": "win10-arm64"
+          },
+          "runtimes/win10-arm64/native/Microsoft.CognitiveServices.Speech.extension.kws.dll": {
+            "assetType": "native",
+            "rid": "win10-arm64"
+          },
+          "runtimes/win10-arm64/native/Microsoft.CognitiveServices.Speech.extension.kws.ort.dll": {
+            "assetType": "native",
+            "rid": "win10-arm64"
+          },
+          "runtimes/win10-arm64/native/Microsoft.CognitiveServices.Speech.extension.lu.dll": {
+            "assetType": "native",
+            "rid": "win10-arm64"
+          },
+          "runtimes/win10-arm64/native/Microsoft.CognitiveServices.Speech.extension.mas.dll": {
+            "assetType": "native",
+            "rid": "win10-arm64"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration/9.0.4": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Configuration.Abstractions": "9.0.3",
-          "Microsoft.Extensions.Primitives": "9.0.3"
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.4",
+          "Microsoft.Extensions.Primitives": "9.0.4"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {
@@ -78,10 +663,10 @@
           "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Configuration.targets": {}
         }
       },
-      "Microsoft.Extensions.Configuration.Abstractions/9.0.3": {
+      "Microsoft.Extensions.Configuration.Abstractions/9.0.4": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Primitives": "9.0.3"
+          "Microsoft.Extensions.Primitives": "9.0.4"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
@@ -97,14 +682,14 @@
           "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Configuration.Abstractions.targets": {}
         }
       },
-      "Microsoft.Extensions.Configuration.FileExtensions/9.0.3": {
+      "Microsoft.Extensions.Configuration.FileExtensions/9.0.4": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Configuration": "9.0.3",
-          "Microsoft.Extensions.Configuration.Abstractions": "9.0.3",
-          "Microsoft.Extensions.FileProviders.Abstractions": "9.0.3",
-          "Microsoft.Extensions.FileProviders.Physical": "9.0.3",
-          "Microsoft.Extensions.Primitives": "9.0.3"
+          "Microsoft.Extensions.Configuration": "9.0.4",
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.4",
+          "Microsoft.Extensions.FileProviders.Abstractions": "9.0.4",
+          "Microsoft.Extensions.FileProviders.Physical": "9.0.4",
+          "Microsoft.Extensions.Primitives": "9.0.4"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.dll": {
@@ -120,14 +705,14 @@
           "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Configuration.FileExtensions.targets": {}
         }
       },
-      "Microsoft.Extensions.Configuration.Json/9.0.3": {
+      "Microsoft.Extensions.Configuration.Json/9.0.4": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Configuration": "9.0.3",
-          "Microsoft.Extensions.Configuration.Abstractions": "9.0.3",
-          "Microsoft.Extensions.Configuration.FileExtensions": "9.0.3",
-          "Microsoft.Extensions.FileProviders.Abstractions": "9.0.3",
-          "System.Text.Json": "9.0.3"
+          "Microsoft.Extensions.Configuration": "9.0.4",
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.4",
+          "Microsoft.Extensions.Configuration.FileExtensions": "9.0.4",
+          "Microsoft.Extensions.FileProviders.Abstractions": "9.0.4",
+          "System.Text.Json": "9.0.4"
         },
         "compile": {
           "lib/netstandard2.1/Microsoft.Extensions.Configuration.Json.dll": {
@@ -143,10 +728,10 @@
           "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Configuration.Json.targets": {}
         }
       },
-      "Microsoft.Extensions.FileProviders.Abstractions/9.0.3": {
+      "Microsoft.Extensions.FileProviders.Abstractions/9.0.4": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Primitives": "9.0.3"
+          "Microsoft.Extensions.Primitives": "9.0.4"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {
@@ -162,12 +747,12 @@
           "buildTransitive/netcoreapp2.0/Microsoft.Extensions.FileProviders.Abstractions.targets": {}
         }
       },
-      "Microsoft.Extensions.FileProviders.Physical/9.0.3": {
+      "Microsoft.Extensions.FileProviders.Physical/9.0.4": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.FileProviders.Abstractions": "9.0.3",
-          "Microsoft.Extensions.FileSystemGlobbing": "9.0.3",
-          "Microsoft.Extensions.Primitives": "9.0.3"
+          "Microsoft.Extensions.FileProviders.Abstractions": "9.0.4",
+          "Microsoft.Extensions.FileSystemGlobbing": "9.0.4",
+          "Microsoft.Extensions.Primitives": "9.0.4"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.dll": {
@@ -183,7 +768,7 @@
           "buildTransitive/netcoreapp2.0/Microsoft.Extensions.FileProviders.Physical.targets": {}
         }
       },
-      "Microsoft.Extensions.FileSystemGlobbing/9.0.3": {
+      "Microsoft.Extensions.FileSystemGlobbing/9.0.4": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll": {
@@ -199,7 +784,7 @@
           "buildTransitive/netcoreapp2.0/Microsoft.Extensions.FileSystemGlobbing.targets": {}
         }
       },
-      "Microsoft.Extensions.Primitives/9.0.3": {
+      "Microsoft.Extensions.Primitives/9.0.4": {
         "type": "package",
         "dependencies": {
           "System.Memory": "4.5.5",
@@ -217,6 +802,19 @@
         },
         "build": {
           "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Primitives.targets": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Buffers/4.5.1": {
@@ -241,7 +839,23 @@
           }
         }
       },
-      "System.IO.Pipelines/9.0.3": {
+      "System.Drawing.Common/9.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netcoreapp2.0/System.Drawing.Common.targets": {}
+        }
+      },
+      "System.IO.Pipelines/9.0.4": {
         "type": "package",
         "dependencies": {
           "System.Buffers": "4.5.1",
@@ -313,7 +927,7 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "System.Text.Encodings.Web/9.0.3": {
+      "System.Text.Encodings.Web/9.0.4": {
         "type": "package",
         "dependencies": {
           "System.Buffers": "4.5.1",
@@ -334,15 +948,15 @@
           "buildTransitive/netcoreapp2.0/System.Text.Encodings.Web.targets": {}
         }
       },
-      "System.Text.Json/9.0.3": {
+      "System.Text.Json/9.0.4": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Bcl.AsyncInterfaces": "9.0.3",
+          "Microsoft.Bcl.AsyncInterfaces": "9.0.4",
           "System.Buffers": "4.5.1",
-          "System.IO.Pipelines": "9.0.3",
+          "System.IO.Pipelines": "9.0.4",
           "System.Memory": "4.5.5",
           "System.Runtime.CompilerServices.Unsafe": "6.0.0",
-          "System.Text.Encodings.Web": "9.0.3",
+          "System.Text.Encodings.Web": "9.0.4",
           "System.Threading.Tasks.Extensions": "4.5.4"
         },
         "compile": {
@@ -387,6 +1001,187 @@
         "lib/netstandard2.0/Azure.AI.TextAnalytics.xml"
       ]
     },
+    "Azure.AI.Vision.Common/0.15.1-beta.1": {
+      "sha512": "2cm1MLo4jVZLHk3WTMNZAtYaeolo7Fsw0XJX0yM3/SyRiQevxgqCRs+/+YY5dbPAF1r+BIvfnxrowKvnfLRGHQ==",
+      "type": "package",
+      "path": "azure.ai.vision.common/0.15.1-beta.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "REDIST.txt",
+        "ThirdPartyNotices.txt",
+        "azure.ai.vision.common.0.15.1-beta.1.nupkg.sha512",
+        "azure.ai.vision.common.nuspec",
+        "build/Azure.AI.Vision.Common.props",
+        "build/native/ARM64/Release/Azure-AI-Vision-Native.lib",
+        "build/native/Azure.AI.Vision.Common.targets",
+        "build/native/include/c_api/azac_api_c_common.h",
+        "build/native/include/c_api/azac_api_c_diagnostics.h",
+        "build/native/include/c_api/azac_api_c_error.h",
+        "build/native/include/c_api/azac_api_c_pal.h",
+        "build/native/include/c_api/azac_debug.h",
+        "build/native/include/c_api/azac_error.h",
+        "build/native/include/cxx_api/azac_api_cxx_common.h",
+        "build/native/include/vision_c_api/CMakeLists.txt",
+        "build/native/include/vision_c_api/azac_api_c_async_op.h",
+        "build/native/include/vision_c_api/azac_api_c_json.h",
+        "build/native/include/vision_c_api/azac_api_c_properties.h",
+        "build/native/include/vision_c_api/azac_api_c_property_bag.h",
+        "build/native/include/vision_c_api/vision_api_c.h",
+        "build/native/include/vision_c_api/vision_api_c_common.h",
+        "build/native/include/vision_c_api/vision_api_c_diagnostics.h",
+        "build/native/include/vision_c_api/vision_api_c_errors.h",
+        "build/native/include/vision_c_api/vision_api_c_event_args.h",
+        "build/native/include/vision_c_api/vision_api_c_frame.h",
+        "build/native/include/vision_c_api/vision_api_c_frame_format.h",
+        "build/native/include/vision_c_api/vision_api_c_frame_reader.h",
+        "build/native/include/vision_c_api/vision_api_c_frame_source.h",
+        "build/native/include/vision_c_api/vision_api_c_frame_writer.h",
+        "build/native/include/vision_c_api/vision_api_c_result.h",
+        "build/native/include/vision_c_api/vision_api_c_session.h",
+        "build/native/include/vision_c_api/vision_api_c_source.h",
+        "build/native/include/vision_cxx_api/core/azac_api_cxx_details_json.hpp",
+        "build/native/include/vision_cxx_api/core/azac_api_cxx_details_lifetime.hpp",
+        "build/native/include/vision_cxx_api/core/azac_api_cxx_details_promise_callback_helper.hpp",
+        "build/native/include/vision_cxx_api/core/azac_api_cxx_details_property_collection.hpp",
+        "build/native/include/vision_cxx_api/core/azac_api_cxx_details_string_helpers.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_common.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_console_logger.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_core.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_details_event_args_base.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_details_recognizer_base.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_details_result_base.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_details_result_event_args_base.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_details_session_error_details.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_details_session_event_args_base.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_details_session_stopped_details.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_details_session_stopped_event_args_base.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_embedded_options.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_event_logger.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_event_signal.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_file_logger.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_frame.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_frame_format.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_frame_format_properties.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_frame_properties.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_frame_reader.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_frame_source.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_frame_source_properties.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_frame_writer.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_frameset_format.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_frameset_format_properties.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_frameset_reader.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_frameset_source.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_frameset_source_properties.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_frameset_writer.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_image_source_buffer.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_image_writer.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_log_level.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_memory_logger.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_nullable.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_samples.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_service_advanced_options.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_service_options.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_session.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_session_options.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_session_properties.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_session_recognizer.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_session_result.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_session_result_event_args.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_session_result_properties.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_session_result_reason.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_session_started_event_args.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_session_stopped_details.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_session_stopped_error_details.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_session_stopped_error_reason.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_session_stopped_event_args.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_session_stopped_reason.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_source.hpp",
+        "build/native/include/vision_cxx_api/core/vision_api_cxx_source_properties.hpp",
+        "build/native/uap/x64/Release/Azure-AI-Vision-Native.lib",
+        "build/native/x64/Release/Azure-AI-Vision-Native.lib",
+        "lib/netstandard2.0/Azure.AI.Vision.Common.dll",
+        "lib/netstandard2.0/Azure.AI.Vision.Common.xml",
+        "runtimes/linux-x64/native/libAzure-AI-Vision-Input-Device.so",
+        "runtimes/linux-x64/native/libAzure-AI-Vision-Input-File.so",
+        "runtimes/linux-x64/native/libAzure-AI-Vision-Native.so",
+        "runtimes/linux-x64/native/libVision_Core.so",
+        "runtimes/linux-x64/native/libVision_Media.so",
+        "runtimes/linux-x64/native/libVision_Media_VideoIngester.so",
+        "runtimes/linux-x64/native/libavcodec.so",
+        "runtimes/linux-x64/native/libavcodec.so.58",
+        "runtimes/linux-x64/native/libavcodec.so.58.35.100",
+        "runtimes/linux-x64/native/libavdevice.so",
+        "runtimes/linux-x64/native/libavdevice.so.58",
+        "runtimes/linux-x64/native/libavdevice.so.58.5.100",
+        "runtimes/linux-x64/native/libavfilter.so",
+        "runtimes/linux-x64/native/libavfilter.so.7",
+        "runtimes/linux-x64/native/libavfilter.so.7.40.101",
+        "runtimes/linux-x64/native/libavformat.so",
+        "runtimes/linux-x64/native/libavformat.so.58",
+        "runtimes/linux-x64/native/libavformat.so.58.20.100",
+        "runtimes/linux-x64/native/libavutil.so",
+        "runtimes/linux-x64/native/libavutil.so.56",
+        "runtimes/linux-x64/native/libavutil.so.56.22.100",
+        "runtimes/linux-x64/native/libswresample.so",
+        "runtimes/linux-x64/native/libswresample.so.3",
+        "runtimes/linux-x64/native/libswresample.so.3.3.100",
+        "runtimes/linux-x64/native/libswscale.so",
+        "runtimes/linux-x64/native/libswscale.so.5",
+        "runtimes/linux-x64/native/libswscale.so.5.3.100",
+        "runtimes/win-ARM64/native/Azure-AI-Vision-Input-Device.dll",
+        "runtimes/win-ARM64/native/Azure-AI-Vision-Native.dll",
+        "runtimes/win-x64/native/Azure-AI-Vision-Input-Device.dll",
+        "runtimes/win-x64/native/Azure-AI-Vision-Input-File.dll",
+        "runtimes/win-x64/native/Azure-AI-Vision-Native.dll",
+        "runtimes/win-x64/native/Vision_Core.dll",
+        "runtimes/win-x64/native/Vision_Media.dll",
+        "runtimes/win-x64/native/Vision_Media_VideoIngester.dll",
+        "runtimes/win-x64/native/avcodec-58.dll",
+        "runtimes/win-x64/native/avdevice-58.dll",
+        "runtimes/win-x64/native/avfilter-7.dll",
+        "runtimes/win-x64/native/avformat-58.dll",
+        "runtimes/win-x64/native/avutil-56.dll",
+        "runtimes/win-x64/native/swresample-3.dll",
+        "runtimes/win-x64/native/swscale-5.dll",
+        "runtimes/win-x64/native/turbojpeg.dll",
+        "runtimes/win-x64/nativeassets/uap/Azure-AI-Vision-Native.dll"
+      ]
+    },
+    "Azure.AI.Vision.ImageAnalysis/0.15.1-beta.1": {
+      "sha512": "CLU1Le8DrtAnmKSs1pBnxVBuUScSVPvtoKj0THTg/wdieEkb3vCD4GSqAt+VGJKwF5TF1+f5ALLkrDD44G7tVQ==",
+      "type": "package",
+      "path": "azure.ai.vision.imageanalysis/0.15.1-beta.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "REDIST.txt",
+        "ThirdPartyNotices.txt",
+        "azure.ai.vision.imageanalysis.0.15.1-beta.1.nupkg.sha512",
+        "azure.ai.vision.imageanalysis.nuspec",
+        "build/Azure.AI.Vision.ImageAnalysis.props",
+        "build/native/Azure.AI.Vision.ImageAnalysis.targets",
+        "build/native/include/vision_cxx_api/image_analyzer/vision_api_cxx_image_analysis_core_result_reason.hpp",
+        "build/native/include/vision_cxx_api/image_analyzer/vision_api_cxx_image_analysis_core_stop_reason.hpp",
+        "build/native/include/vision_cxx_api/image_analyzer/vision_api_cxx_image_analysis_error_details.hpp",
+        "build/native/include/vision_cxx_api/image_analyzer/vision_api_cxx_image_analysis_error_reason.hpp",
+        "build/native/include/vision_cxx_api/image_analyzer/vision_api_cxx_image_analysis_event_args.hpp",
+        "build/native/include/vision_cxx_api/image_analyzer/vision_api_cxx_image_analysis_options.hpp",
+        "build/native/include/vision_cxx_api/image_analyzer/vision_api_cxx_image_analysis_result.hpp",
+        "build/native/include/vision_cxx_api/image_analyzer/vision_api_cxx_image_analysis_result_details.hpp",
+        "build/native/include/vision_cxx_api/image_analyzer/vision_api_cxx_image_analysis_result_properties.hpp",
+        "build/native/include/vision_cxx_api/image_analyzer/vision_api_cxx_image_analysis_result_reason.hpp",
+        "build/native/include/vision_cxx_api/image_analyzer/vision_api_cxx_image_analyzer.hpp",
+        "build/native/include/vision_cxx_api/image_analyzer/vision_api_cxx_image_analyzer_properties.hpp",
+        "lib/netstandard2.0/Azure.AI.Vision.ImageAnalysis.dll",
+        "lib/netstandard2.0/Azure.AI.Vision.ImageAnalysis.xml",
+        "runtimes/linux-x64/native/libAzure-AI-Vision-Extension-Image.so",
+        "runtimes/win-x64/native/Azure-AI-Vision-Extension-Image.dll",
+        "runtimes/win-x64/nativeassets/uap/Azure-AI-Vision-Extension-Image.dll"
+      ]
+    },
     "Azure.Core/1.33.0": {
       "sha512": "p06/5ueyCwKe09zqz7bPR6vbWRGrDy6Ot4aqjrjnowhFlXUBoljUdH+abDZP2vUuSZrOSstF4h860hBHWh8uHg==",
       "type": "package",
@@ -411,10 +1206,10 @@
         "lib/netstandard2.0/Azure.Core.xml"
       ]
     },
-    "Microsoft.Bcl.AsyncInterfaces/9.0.3": {
-      "sha512": "oFFX9Ls8dnNUBCD9yzRzHTY8tqvv+CiX43B8L8DjrM8BqYTAlORYaJf6+KXNtSC2bD1135yV8OxzcZFaluow5w==",
+    "Microsoft.Bcl.AsyncInterfaces/9.0.4": {
+      "sha512": "9VGI5kxIvrNG2mqLQZnUR6y/3fcnygD8eNpHR+CqfbnIXvea6nehnYknDKQTxZVPMpzpNca+7DxLBmpdB3q0Bw==",
       "type": "package",
-      "path": "microsoft.bcl.asyncinterfaces/9.0.3",
+      "path": "microsoft.bcl.asyncinterfaces/9.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -432,15 +1227,350 @@
         "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.xml",
         "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
         "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.xml",
-        "microsoft.bcl.asyncinterfaces.9.0.3.nupkg.sha512",
+        "microsoft.bcl.asyncinterfaces.9.0.4.nupkg.sha512",
         "microsoft.bcl.asyncinterfaces.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.Configuration/9.0.3": {
-      "sha512": "RIEeZxWYm77+OWLwgik7DzSVSONjqkmcbuCb1koZdGAV7BgOUWnLz80VMyHZMw3onrVwFCCMHBBdruBPuQTvkg==",
+    "Microsoft.CognitiveServices.Speech/1.31.0": {
+      "sha512": "rhneHq8evmmlE+qj4uCz/lH3+9KtTZHZgrj+uhb52JfehjhYD4X0/mT0xeck4o0+qWInwo3U7d1rhLWABIHPzw==",
       "type": "package",
-      "path": "microsoft.extensions.configuration/9.0.3",
+      "path": "microsoft.cognitiveservices.speech/1.31.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Microsoft.CognitiveServices.Speech.props",
+        "build/REDIST.txt",
+        "build/Xamarin.iOS/Microsoft.CognitiveServices.Speech.targets",
+        "build/Xamarin.iOS/libMicrosoft.CognitiveServices.Speech.core.a",
+        "build/monoandroid/Microsoft.CognitiveServices.Speech.targets",
+        "build/monoandroid/libs/arm64-v8a/libMicrosoft.CognitiveServices.Speech.core.so",
+        "build/monoandroid/libs/arm64-v8a/libMicrosoft.CognitiveServices.Speech.extension.audio.sys.so",
+        "build/monoandroid/libs/arm64-v8a/libMicrosoft.CognitiveServices.Speech.extension.kws.ort.so",
+        "build/monoandroid/libs/arm64-v8a/libMicrosoft.CognitiveServices.Speech.extension.kws.so",
+        "build/monoandroid/libs/arm64-v8a/libMicrosoft.CognitiveServices.Speech.extension.lu.so",
+        "build/monoandroid/libs/armeabi-v7a/libMicrosoft.CognitiveServices.Speech.core.so",
+        "build/monoandroid/libs/armeabi-v7a/libMicrosoft.CognitiveServices.Speech.extension.audio.sys.so",
+        "build/monoandroid/libs/armeabi-v7a/libMicrosoft.CognitiveServices.Speech.extension.kws.ort.so",
+        "build/monoandroid/libs/armeabi-v7a/libMicrosoft.CognitiveServices.Speech.extension.kws.so",
+        "build/monoandroid/libs/armeabi-v7a/libMicrosoft.CognitiveServices.Speech.extension.lu.so",
+        "build/monoandroid/libs/x86/libMicrosoft.CognitiveServices.Speech.core.so",
+        "build/monoandroid/libs/x86/libMicrosoft.CognitiveServices.Speech.extension.audio.sys.so",
+        "build/monoandroid/libs/x86/libMicrosoft.CognitiveServices.Speech.extension.kws.ort.so",
+        "build/monoandroid/libs/x86/libMicrosoft.CognitiveServices.Speech.extension.kws.so",
+        "build/monoandroid/libs/x86/libMicrosoft.CognitiveServices.Speech.extension.lu.so",
+        "build/monoandroid/libs/x86_64/libMicrosoft.CognitiveServices.Speech.core.so",
+        "build/monoandroid/libs/x86_64/libMicrosoft.CognitiveServices.Speech.extension.audio.sys.so",
+        "build/monoandroid/libs/x86_64/libMicrosoft.CognitiveServices.Speech.extension.kws.ort.so",
+        "build/monoandroid/libs/x86_64/libMicrosoft.CognitiveServices.Speech.extension.kws.so",
+        "build/monoandroid/libs/x86_64/libMicrosoft.CognitiveServices.Speech.extension.lu.so",
+        "build/native/ARM/Release/Microsoft.CognitiveServices.Speech.core.lib",
+        "build/native/ARM64/Release/Microsoft.CognitiveServices.Speech.core.lib",
+        "build/native/Microsoft.CognitiveServices.Speech.targets",
+        "build/native/Win32/Release/Microsoft.CognitiveServices.Speech.core.lib",
+        "build/native/include/c_api/CMakeLists.txt",
+        "build/native/include/c_api/azac_api_c_common.h",
+        "build/native/include/c_api/azac_api_c_diagnostics.h",
+        "build/native/include/c_api/azac_api_c_error.h",
+        "build/native/include/c_api/azac_api_c_pal.h",
+        "build/native/include/c_api/azac_debug.h",
+        "build/native/include/c_api/azac_error.h",
+        "build/native/include/c_api/speechapi_c.h",
+        "build/native/include/c_api/speechapi_c_audio_config.h",
+        "build/native/include/c_api/speechapi_c_audio_processing_options.h",
+        "build/native/include/c_api/speechapi_c_audio_stream.h",
+        "build/native/include/c_api/speechapi_c_audio_stream_format.h",
+        "build/native/include/c_api/speechapi_c_auto_detect_source_lang_config.h",
+        "build/native/include/c_api/speechapi_c_common.h",
+        "build/native/include/c_api/speechapi_c_connection.h",
+        "build/native/include/c_api/speechapi_c_conversation.h",
+        "build/native/include/c_api/speechapi_c_conversation_transcription_result.h",
+        "build/native/include/c_api/speechapi_c_conversation_translator.h",
+        "build/native/include/c_api/speechapi_c_diagnostics.h",
+        "build/native/include/c_api/speechapi_c_dialog_service_config.h",
+        "build/native/include/c_api/speechapi_c_dialog_service_connector.h",
+        "build/native/include/c_api/speechapi_c_embedded_speech_config.h",
+        "build/native/include/c_api/speechapi_c_error.h",
+        "build/native/include/c_api/speechapi_c_ext_audiocompression.h",
+        "build/native/include/c_api/speechapi_c_factory.h",
+        "build/native/include/c_api/speechapi_c_grammar.h",
+        "build/native/include/c_api/speechapi_c_hybrid_speech_config.h",
+        "build/native/include/c_api/speechapi_c_intent_recognizer.h",
+        "build/native/include/c_api/speechapi_c_intent_result.h",
+        "build/native/include/c_api/speechapi_c_intent_trigger.h",
+        "build/native/include/c_api/speechapi_c_json.h",
+        "build/native/include/c_api/speechapi_c_keyword_recognition_model.h",
+        "build/native/include/c_api/speechapi_c_language_understanding_model.h",
+        "build/native/include/c_api/speechapi_c_meeting.h",
+        "build/native/include/c_api/speechapi_c_meeting_transcription_result.h",
+        "build/native/include/c_api/speechapi_c_operations.h",
+        "build/native/include/c_api/speechapi_c_participant.h",
+        "build/native/include/c_api/speechapi_c_pattern_matching_model.h",
+        "build/native/include/c_api/speechapi_c_pronunciation_assessment_config.h",
+        "build/native/include/c_api/speechapi_c_property_bag.h",
+        "build/native/include/c_api/speechapi_c_recognizer.h",
+        "build/native/include/c_api/speechapi_c_result.h",
+        "build/native/include/c_api/speechapi_c_session.h",
+        "build/native/include/c_api/speechapi_c_source_lang_config.h",
+        "build/native/include/c_api/speechapi_c_speaker_recognition.h",
+        "build/native/include/c_api/speechapi_c_speech_config.h",
+        "build/native/include/c_api/speechapi_c_speech_recognition_model.h",
+        "build/native/include/c_api/speechapi_c_speech_translation_config.h",
+        "build/native/include/c_api/speechapi_c_speech_translation_model.h",
+        "build/native/include/c_api/speechapi_c_synthesizer.h",
+        "build/native/include/c_api/speechapi_c_translation_recognizer.h",
+        "build/native/include/c_api/speechapi_c_translation_result.h",
+        "build/native/include/c_api/speechapi_c_user.h",
+        "build/native/include/c_api/spxdebug.h",
+        "build/native/include/c_api/spxerror.h",
+        "build/native/include/cxx_api/CMakeLists.txt",
+        "build/native/include/cxx_api/azac_api_cxx_common.h",
+        "build/native/include/cxx_api/speechapi_cxx.h",
+        "build/native/include/cxx_api/speechapi_cxx_audio_config.h",
+        "build/native/include/cxx_api/speechapi_cxx_audio_data_stream.h",
+        "build/native/include/cxx_api/speechapi_cxx_audio_processing_options.h",
+        "build/native/include/cxx_api/speechapi_cxx_audio_stream.h",
+        "build/native/include/cxx_api/speechapi_cxx_audio_stream_format.h",
+        "build/native/include/cxx_api/speechapi_cxx_auto_detect_source_lang_config.h",
+        "build/native/include/cxx_api/speechapi_cxx_auto_detect_source_lang_result.h",
+        "build/native/include/cxx_api/speechapi_cxx_class_language_model.h",
+        "build/native/include/cxx_api/speechapi_cxx_common.h",
+        "build/native/include/cxx_api/speechapi_cxx_connection.h",
+        "build/native/include/cxx_api/speechapi_cxx_connection_eventargs.h",
+        "build/native/include/cxx_api/speechapi_cxx_connection_message.h",
+        "build/native/include/cxx_api/speechapi_cxx_connection_message_eventargs.h",
+        "build/native/include/cxx_api/speechapi_cxx_conversation.h",
+        "build/native/include/cxx_api/speechapi_cxx_conversation_transcriber.h",
+        "build/native/include/cxx_api/speechapi_cxx_conversation_transcription_eventargs.h",
+        "build/native/include/cxx_api/speechapi_cxx_conversation_transcription_result.h",
+        "build/native/include/cxx_api/speechapi_cxx_conversation_translator.h",
+        "build/native/include/cxx_api/speechapi_cxx_conversation_translator_events.h",
+        "build/native/include/cxx_api/speechapi_cxx_conversational_language_understanding_model.h",
+        "build/native/include/cxx_api/speechapi_cxx_dialog_service_config.h",
+        "build/native/include/cxx_api/speechapi_cxx_dialog_service_connector.h",
+        "build/native/include/cxx_api/speechapi_cxx_dialog_service_connector_eventargs.h",
+        "build/native/include/cxx_api/speechapi_cxx_embedded_speech_config.h",
+        "build/native/include/cxx_api/speechapi_cxx_enums.h",
+        "build/native/include/cxx_api/speechapi_cxx_event_logger.h",
+        "build/native/include/cxx_api/speechapi_cxx_eventargs.h",
+        "build/native/include/cxx_api/speechapi_cxx_eventsignal.h",
+        "build/native/include/cxx_api/speechapi_cxx_eventsignalbase.h",
+        "build/native/include/cxx_api/speechapi_cxx_file_logger.h",
+        "build/native/include/cxx_api/speechapi_cxx_grammar.h",
+        "build/native/include/cxx_api/speechapi_cxx_grammar_list.h",
+        "build/native/include/cxx_api/speechapi_cxx_grammar_phrase.h",
+        "build/native/include/cxx_api/speechapi_cxx_hybrid_speech_config.h",
+        "build/native/include/cxx_api/speechapi_cxx_intent_recognition_eventargs.h",
+        "build/native/include/cxx_api/speechapi_cxx_intent_recognition_result.h",
+        "build/native/include/cxx_api/speechapi_cxx_intent_recognizer.h",
+        "build/native/include/cxx_api/speechapi_cxx_intent_trigger.h",
+        "build/native/include/cxx_api/speechapi_cxx_keyword_recognition_eventargs.h",
+        "build/native/include/cxx_api/speechapi_cxx_keyword_recognition_model.h",
+        "build/native/include/cxx_api/speechapi_cxx_keyword_recognition_result.h",
+        "build/native/include/cxx_api/speechapi_cxx_keyword_recognizer.h",
+        "build/native/include/cxx_api/speechapi_cxx_language_understanding_model.h",
+        "build/native/include/cxx_api/speechapi_cxx_log_level.h",
+        "build/native/include/cxx_api/speechapi_cxx_meeting.h",
+        "build/native/include/cxx_api/speechapi_cxx_meeting_transcriber.h",
+        "build/native/include/cxx_api/speechapi_cxx_meeting_transcription_eventargs.h",
+        "build/native/include/cxx_api/speechapi_cxx_meeting_transcription_result.h",
+        "build/native/include/cxx_api/speechapi_cxx_memory_logger.h",
+        "build/native/include/cxx_api/speechapi_cxx_participant.h",
+        "build/native/include/cxx_api/speechapi_cxx_pattern_matching_entity.h",
+        "build/native/include/cxx_api/speechapi_cxx_pattern_matching_intent.h",
+        "build/native/include/cxx_api/speechapi_cxx_pattern_matching_model.h",
+        "build/native/include/cxx_api/speechapi_cxx_phrase_list_grammar.h",
+        "build/native/include/cxx_api/speechapi_cxx_pronunciation_assessment_config.h",
+        "build/native/include/cxx_api/speechapi_cxx_pronunciation_assessment_result.h",
+        "build/native/include/cxx_api/speechapi_cxx_properties.h",
+        "build/native/include/cxx_api/speechapi_cxx_recognition_async_recognizer.h",
+        "build/native/include/cxx_api/speechapi_cxx_recognition_base_async_recognizer.h",
+        "build/native/include/cxx_api/speechapi_cxx_recognition_eventargs.h",
+        "build/native/include/cxx_api/speechapi_cxx_recognition_result.h",
+        "build/native/include/cxx_api/speechapi_cxx_recognizer.h",
+        "build/native/include/cxx_api/speechapi_cxx_session.h",
+        "build/native/include/cxx_api/speechapi_cxx_session_eventargs.h",
+        "build/native/include/cxx_api/speechapi_cxx_smart_handle.h",
+        "build/native/include/cxx_api/speechapi_cxx_source_lang_config.h",
+        "build/native/include/cxx_api/speechapi_cxx_source_language_recognizer.h",
+        "build/native/include/cxx_api/speechapi_cxx_speaker_identification_model.h",
+        "build/native/include/cxx_api/speechapi_cxx_speaker_recognition_result.h",
+        "build/native/include/cxx_api/speechapi_cxx_speaker_recognizer.h",
+        "build/native/include/cxx_api/speechapi_cxx_speaker_verification_model.h",
+        "build/native/include/cxx_api/speechapi_cxx_speech_config.h",
+        "build/native/include/cxx_api/speechapi_cxx_speech_recognition_eventargs.h",
+        "build/native/include/cxx_api/speechapi_cxx_speech_recognition_model.h",
+        "build/native/include/cxx_api/speechapi_cxx_speech_recognition_result.h",
+        "build/native/include/cxx_api/speechapi_cxx_speech_recognizer.h",
+        "build/native/include/cxx_api/speechapi_cxx_speech_synthesis_bookmark_eventargs.h",
+        "build/native/include/cxx_api/speechapi_cxx_speech_synthesis_eventargs.h",
+        "build/native/include/cxx_api/speechapi_cxx_speech_synthesis_result.h",
+        "build/native/include/cxx_api/speechapi_cxx_speech_synthesis_viseme_eventargs.h",
+        "build/native/include/cxx_api/speechapi_cxx_speech_synthesis_word_boundary_eventargs.h",
+        "build/native/include/cxx_api/speechapi_cxx_speech_synthesizer.h",
+        "build/native/include/cxx_api/speechapi_cxx_speech_translation_config.h",
+        "build/native/include/cxx_api/speechapi_cxx_speech_translation_model.h",
+        "build/native/include/cxx_api/speechapi_cxx_string_helpers.h",
+        "build/native/include/cxx_api/speechapi_cxx_synthesis_voices_result.h",
+        "build/native/include/cxx_api/speechapi_cxx_translation_eventargs.h",
+        "build/native/include/cxx_api/speechapi_cxx_translation_recognizer.h",
+        "build/native/include/cxx_api/speechapi_cxx_translation_result.h",
+        "build/native/include/cxx_api/speechapi_cxx_user.h",
+        "build/native/include/cxx_api/speechapi_cxx_utils.h",
+        "build/native/include/cxx_api/speechapi_cxx_voice_info.h",
+        "build/native/include/cxx_api/speechapi_cxx_voice_profile.h",
+        "build/native/include/cxx_api/speechapi_cxx_voice_profile_client.h",
+        "build/native/include/cxx_api/speechapi_cxx_voice_profile_enrollment_result.h",
+        "build/native/include/cxx_api/speechapi_cxx_voice_profile_phrase_result.h",
+        "build/native/include/cxx_api/speechapi_cxx_voice_profile_result.h",
+        "build/native/uap/ARM/Release/Microsoft.CognitiveServices.Speech.core.lib",
+        "build/native/uap/ARM64/Release/Microsoft.CognitiveServices.Speech.core.lib",
+        "build/native/uap/Win32/Release/Microsoft.CognitiveServices.Speech.core.lib",
+        "build/native/uap/x64/Release/Microsoft.CognitiveServices.Speech.core.lib",
+        "build/native/x64/Release/Microsoft.CognitiveServices.Speech.core.lib",
+        "build/net462/Microsoft.CognitiveServices.Speech.targets",
+        "build/net6.0-android/Microsoft.CognitiveServices.Speech.targets",
+        "build/net6.0-ios/Microsoft.CognitiveServices.Speech.targets",
+        "lib/Xamarin.iOS/Microsoft.CognitiveServices.Speech.csharp.dll",
+        "lib/Xamarin.iOS/Microsoft.CognitiveServices.Speech.csharp.xml",
+        "lib/monoandroid/Microsoft.CognitiveServices.Speech.csharp.dll",
+        "lib/monoandroid/Microsoft.CognitiveServices.Speech.csharp.xml",
+        "lib/net462/Microsoft.CognitiveServices.Speech.csharp.dll",
+        "lib/net462/Microsoft.CognitiveServices.Speech.csharp.xml",
+        "lib/net6.0-android/Microsoft.CognitiveServices.Speech.csharp.dll",
+        "lib/net6.0-android/Microsoft.CognitiveServices.Speech.csharp.xml",
+        "lib/net6.0-ios/Microsoft.CognitiveServices.Speech.csharp.dll",
+        "lib/net6.0-ios/Microsoft.CognitiveServices.Speech.csharp.xml",
+        "lib/net6.0-maccatalyst/Microsoft.CognitiveServices.Speech.csharp.dll",
+        "lib/net6.0-maccatalyst/Microsoft.CognitiveServices.Speech.csharp.xml",
+        "lib/netstandard2.0/Microsoft.CognitiveServices.Speech.csharp.dll",
+        "lib/netstandard2.0/Microsoft.CognitiveServices.Speech.csharp.xml",
+        "lib/uap10.0/Microsoft.CognitiveServices.Speech.csharp.dll",
+        "lib/uap10.0/Microsoft.CognitiveServices.Speech.csharp.xml",
+        "microsoft.cognitiveservices.speech.1.31.0.nupkg.sha512",
+        "microsoft.cognitiveservices.speech.nuspec",
+        "runtimes/android-arm/native/libMicrosoft.CognitiveServices.Speech.core.so",
+        "runtimes/android-arm/native/libMicrosoft.CognitiveServices.Speech.extension.audio.sys.so",
+        "runtimes/android-arm/native/libMicrosoft.CognitiveServices.Speech.extension.kws.ort.so",
+        "runtimes/android-arm/native/libMicrosoft.CognitiveServices.Speech.extension.kws.so",
+        "runtimes/android-arm/native/libMicrosoft.CognitiveServices.Speech.extension.lu.so",
+        "runtimes/android-arm64/native/libMicrosoft.CognitiveServices.Speech.core.so",
+        "runtimes/android-arm64/native/libMicrosoft.CognitiveServices.Speech.extension.audio.sys.so",
+        "runtimes/android-arm64/native/libMicrosoft.CognitiveServices.Speech.extension.kws.ort.so",
+        "runtimes/android-arm64/native/libMicrosoft.CognitiveServices.Speech.extension.kws.so",
+        "runtimes/android-arm64/native/libMicrosoft.CognitiveServices.Speech.extension.lu.so",
+        "runtimes/android-x64/native/libMicrosoft.CognitiveServices.Speech.core.so",
+        "runtimes/android-x64/native/libMicrosoft.CognitiveServices.Speech.extension.audio.sys.so",
+        "runtimes/android-x64/native/libMicrosoft.CognitiveServices.Speech.extension.kws.ort.so",
+        "runtimes/android-x64/native/libMicrosoft.CognitiveServices.Speech.extension.kws.so",
+        "runtimes/android-x64/native/libMicrosoft.CognitiveServices.Speech.extension.lu.so",
+        "runtimes/android-x86/native/libMicrosoft.CognitiveServices.Speech.core.so",
+        "runtimes/android-x86/native/libMicrosoft.CognitiveServices.Speech.extension.audio.sys.so",
+        "runtimes/android-x86/native/libMicrosoft.CognitiveServices.Speech.extension.kws.ort.so",
+        "runtimes/android-x86/native/libMicrosoft.CognitiveServices.Speech.extension.kws.so",
+        "runtimes/android-x86/native/libMicrosoft.CognitiveServices.Speech.extension.lu.so",
+        "runtimes/centos7-x64/native/libMicrosoft.CognitiveServices.Speech.core.so",
+        "runtimes/centos7-x64/native/libMicrosoft.CognitiveServices.Speech.extension.audio.sys.so",
+        "runtimes/centos7-x64/native/libMicrosoft.CognitiveServices.Speech.extension.codec.so",
+        "runtimes/centos7-x64/native/libMicrosoft.CognitiveServices.Speech.extension.kws.ort.so",
+        "runtimes/centos7-x64/native/libMicrosoft.CognitiveServices.Speech.extension.kws.so",
+        "runtimes/centos7-x64/native/libMicrosoft.CognitiveServices.Speech.extension.lu.so",
+        "runtimes/centos7-x64/native/libMicrosoft.CognitiveServices.Speech.extension.mas.so",
+        "runtimes/ios-arm64/native/libMicrosoft.CognitiveServices.Speech.core.a",
+        "runtimes/iossimulator-arm64/native/libMicrosoft.CognitiveServices.Speech.core.a",
+        "runtimes/iossimulator-x64/native/libMicrosoft.CognitiveServices.Speech.core.a",
+        "runtimes/linux-arm/lib/netstandard2.0/Microsoft.CognitiveServices.Speech.csharp.dll",
+        "runtimes/linux-arm/lib/netstandard2.0/Microsoft.CognitiveServices.Speech.csharp.xml",
+        "runtimes/linux-arm/native/libMicrosoft.CognitiveServices.Speech.core.so",
+        "runtimes/linux-arm/native/libMicrosoft.CognitiveServices.Speech.extension.audio.sys.so",
+        "runtimes/linux-arm/native/libMicrosoft.CognitiveServices.Speech.extension.codec.so",
+        "runtimes/linux-arm/native/libMicrosoft.CognitiveServices.Speech.extension.kws.ort.so",
+        "runtimes/linux-arm/native/libMicrosoft.CognitiveServices.Speech.extension.kws.so",
+        "runtimes/linux-arm/native/libMicrosoft.CognitiveServices.Speech.extension.lu.so",
+        "runtimes/linux-arm/native/libMicrosoft.CognitiveServices.Speech.extension.mas.so",
+        "runtimes/linux-arm64/lib/netstandard2.0/Microsoft.CognitiveServices.Speech.csharp.dll",
+        "runtimes/linux-arm64/lib/netstandard2.0/Microsoft.CognitiveServices.Speech.csharp.xml",
+        "runtimes/linux-arm64/native/libMicrosoft.CognitiveServices.Speech.core.so",
+        "runtimes/linux-arm64/native/libMicrosoft.CognitiveServices.Speech.extension.audio.sys.so",
+        "runtimes/linux-arm64/native/libMicrosoft.CognitiveServices.Speech.extension.codec.so",
+        "runtimes/linux-arm64/native/libMicrosoft.CognitiveServices.Speech.extension.kws.ort.so",
+        "runtimes/linux-arm64/native/libMicrosoft.CognitiveServices.Speech.extension.kws.so",
+        "runtimes/linux-arm64/native/libMicrosoft.CognitiveServices.Speech.extension.lu.so",
+        "runtimes/linux-arm64/native/libMicrosoft.CognitiveServices.Speech.extension.mas.so",
+        "runtimes/linux-x64/lib/netstandard2.0/Microsoft.CognitiveServices.Speech.csharp.dll",
+        "runtimes/linux-x64/lib/netstandard2.0/Microsoft.CognitiveServices.Speech.csharp.xml",
+        "runtimes/linux-x64/native/libMicrosoft.CognitiveServices.Speech.core.so",
+        "runtimes/linux-x64/native/libMicrosoft.CognitiveServices.Speech.extension.audio.sys.so",
+        "runtimes/linux-x64/native/libMicrosoft.CognitiveServices.Speech.extension.codec.so",
+        "runtimes/linux-x64/native/libMicrosoft.CognitiveServices.Speech.extension.kws.ort.so",
+        "runtimes/linux-x64/native/libMicrosoft.CognitiveServices.Speech.extension.kws.so",
+        "runtimes/linux-x64/native/libMicrosoft.CognitiveServices.Speech.extension.lu.so",
+        "runtimes/linux-x64/native/libMicrosoft.CognitiveServices.Speech.extension.mas.so",
+        "runtimes/maccatalyst-arm64/native/libMicrosoft.CognitiveServices.Speech.core.a",
+        "runtimes/maccatalyst-x64/native/libMicrosoft.CognitiveServices.Speech.core.a",
+        "runtimes/osx-arm64/lib/netstandard2.0/Microsoft.CognitiveServices.Speech.csharp.dll",
+        "runtimes/osx-arm64/lib/netstandard2.0/Microsoft.CognitiveServices.Speech.csharp.xml",
+        "runtimes/osx-arm64/native/libMicrosoft.CognitiveServices.Speech.core.dylib",
+        "runtimes/osx-x64/lib/netstandard2.0/Microsoft.CognitiveServices.Speech.csharp.dll",
+        "runtimes/osx-x64/lib/netstandard2.0/Microsoft.CognitiveServices.Speech.csharp.xml",
+        "runtimes/osx-x64/native/libMicrosoft.CognitiveServices.Speech.core.dylib",
+        "runtimes/win-x64/native/Microsoft.CognitiveServices.Speech.core.dll",
+        "runtimes/win-x64/native/Microsoft.CognitiveServices.Speech.extension.audio.sys.dll",
+        "runtimes/win-x64/native/Microsoft.CognitiveServices.Speech.extension.codec.dll",
+        "runtimes/win-x64/native/Microsoft.CognitiveServices.Speech.extension.kws.dll",
+        "runtimes/win-x64/native/Microsoft.CognitiveServices.Speech.extension.kws.ort.dll",
+        "runtimes/win-x64/native/Microsoft.CognitiveServices.Speech.extension.lu.dll",
+        "runtimes/win-x64/native/Microsoft.CognitiveServices.Speech.extension.mas.dll",
+        "runtimes/win-x64/nativeassets/uap/Microsoft.CognitiveServices.Speech.core.dll",
+        "runtimes/win-x64/nativeassets/uap/Microsoft.CognitiveServices.Speech.extension.audio.sys.dll",
+        "runtimes/win-x64/nativeassets/uap/Microsoft.CognitiveServices.Speech.extension.kws.dll",
+        "runtimes/win-x64/nativeassets/uap/Microsoft.CognitiveServices.Speech.extension.kws.ort.dll",
+        "runtimes/win-x64/nativeassets/uap/Microsoft.CognitiveServices.Speech.extension.lu.dll",
+        "runtimes/win-x64/nativeassets/uap/Microsoft.CognitiveServices.Speech.extension.mas.dll",
+        "runtimes/win-x64/nativeassets/uap/Microsoft.CognitiveServices.Speech.extension.silk_codec.dll",
+        "runtimes/win-x86/native/Microsoft.CognitiveServices.Speech.core.dll",
+        "runtimes/win-x86/native/Microsoft.CognitiveServices.Speech.extension.audio.sys.dll",
+        "runtimes/win-x86/native/Microsoft.CognitiveServices.Speech.extension.codec.dll",
+        "runtimes/win-x86/native/Microsoft.CognitiveServices.Speech.extension.kws.dll",
+        "runtimes/win-x86/native/Microsoft.CognitiveServices.Speech.extension.kws.ort.dll",
+        "runtimes/win-x86/native/Microsoft.CognitiveServices.Speech.extension.lu.dll",
+        "runtimes/win-x86/native/Microsoft.CognitiveServices.Speech.extension.mas.dll",
+        "runtimes/win-x86/nativeassets/uap/Microsoft.CognitiveServices.Speech.core.dll",
+        "runtimes/win-x86/nativeassets/uap/Microsoft.CognitiveServices.Speech.extension.audio.sys.dll",
+        "runtimes/win-x86/nativeassets/uap/Microsoft.CognitiveServices.Speech.extension.kws.dll",
+        "runtimes/win-x86/nativeassets/uap/Microsoft.CognitiveServices.Speech.extension.kws.ort.dll",
+        "runtimes/win-x86/nativeassets/uap/Microsoft.CognitiveServices.Speech.extension.lu.dll",
+        "runtimes/win-x86/nativeassets/uap/Microsoft.CognitiveServices.Speech.extension.mas.dll",
+        "runtimes/win10-arm/native/Microsoft.CognitiveServices.Speech.core.dll",
+        "runtimes/win10-arm/native/Microsoft.CognitiveServices.Speech.extension.audio.sys.dll",
+        "runtimes/win10-arm/native/Microsoft.CognitiveServices.Speech.extension.kws.dll",
+        "runtimes/win10-arm/native/Microsoft.CognitiveServices.Speech.extension.kws.ort.dll",
+        "runtimes/win10-arm/native/Microsoft.CognitiveServices.Speech.extension.lu.dll",
+        "runtimes/win10-arm/native/Microsoft.CognitiveServices.Speech.extension.mas.dll",
+        "runtimes/win10-arm/nativeassets/uap/Microsoft.CognitiveServices.Speech.core.dll",
+        "runtimes/win10-arm/nativeassets/uap/Microsoft.CognitiveServices.Speech.extension.audio.sys.dll",
+        "runtimes/win10-arm/nativeassets/uap/Microsoft.CognitiveServices.Speech.extension.kws.dll",
+        "runtimes/win10-arm/nativeassets/uap/Microsoft.CognitiveServices.Speech.extension.kws.ort.dll",
+        "runtimes/win10-arm/nativeassets/uap/Microsoft.CognitiveServices.Speech.extension.lu.dll",
+        "runtimes/win10-arm/nativeassets/uap/Microsoft.CognitiveServices.Speech.extension.mas.dll",
+        "runtimes/win10-arm64/native/Microsoft.CognitiveServices.Speech.core.dll",
+        "runtimes/win10-arm64/native/Microsoft.CognitiveServices.Speech.extension.audio.sys.dll",
+        "runtimes/win10-arm64/native/Microsoft.CognitiveServices.Speech.extension.kws.dll",
+        "runtimes/win10-arm64/native/Microsoft.CognitiveServices.Speech.extension.kws.ort.dll",
+        "runtimes/win10-arm64/native/Microsoft.CognitiveServices.Speech.extension.lu.dll",
+        "runtimes/win10-arm64/native/Microsoft.CognitiveServices.Speech.extension.mas.dll",
+        "runtimes/win10-arm64/nativeassets/uap/Microsoft.CognitiveServices.Speech.core.dll",
+        "runtimes/win10-arm64/nativeassets/uap/Microsoft.CognitiveServices.Speech.extension.audio.sys.dll",
+        "runtimes/win10-arm64/nativeassets/uap/Microsoft.CognitiveServices.Speech.extension.kws.dll",
+        "runtimes/win10-arm64/nativeassets/uap/Microsoft.CognitiveServices.Speech.extension.kws.ort.dll",
+        "runtimes/win10-arm64/nativeassets/uap/Microsoft.CognitiveServices.Speech.extension.lu.dll",
+        "runtimes/win10-arm64/nativeassets/uap/Microsoft.CognitiveServices.Speech.extension.mas.dll"
+      ]
+    },
+    "Microsoft.Extensions.Configuration/9.0.4": {
+      "sha512": "KIVBrMbItnCJDd1RF4KEaE8jZwDJcDUJW5zXpbwQ05HNYTK1GveHxHK0B3SjgDJuR48GRACXAO+BLhL8h34S7g==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration/9.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -460,15 +1590,15 @@
         "lib/net9.0/Microsoft.Extensions.Configuration.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.xml",
-        "microsoft.extensions.configuration.9.0.3.nupkg.sha512",
+        "microsoft.extensions.configuration.9.0.4.nupkg.sha512",
         "microsoft.extensions.configuration.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.Configuration.Abstractions/9.0.3": {
-      "sha512": "q5qlbm6GRUrle2ZZxy9aqS/wWoc+mRD3JeP6rcpiJTh5XcemYkplAcJKq8lU11ZfPom5lfbZZfnQvDqcUhqD5Q==",
+    "Microsoft.Extensions.Configuration.Abstractions/9.0.4": {
+      "sha512": "0LN/DiIKvBrkqp7gkF3qhGIeZk6/B63PthAHjQsxymJfIBcz0kbf4/p/t4lMgggVxZ+flRi5xvTwlpPOoZk8fg==",
       "type": "package",
-      "path": "microsoft.extensions.configuration.abstractions/9.0.3",
+      "path": "microsoft.extensions.configuration.abstractions/9.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -488,15 +1618,15 @@
         "lib/net9.0/Microsoft.Extensions.Configuration.Abstractions.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.xml",
-        "microsoft.extensions.configuration.abstractions.9.0.3.nupkg.sha512",
+        "microsoft.extensions.configuration.abstractions.9.0.4.nupkg.sha512",
         "microsoft.extensions.configuration.abstractions.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.Configuration.FileExtensions/9.0.3": {
-      "sha512": "tBNMSDJ2q7WQK2zwPhHY5I/q95t7sf6dT079mGrNm0yOZF/gM9JvR/LtCb/rwhRmh7A6XMnzv5WbpCh9KLq9EQ==",
+    "Microsoft.Extensions.Configuration.FileExtensions/9.0.4": {
+      "sha512": "UY864WQ3AS2Fkc8fYLombWnjrXwYt+BEHHps0hY4sxlgqaVW06AxbpgRZjfYf8PyRbplJqruzZDB/nSLT+7RLQ==",
       "type": "package",
-      "path": "microsoft.extensions.configuration.fileextensions/9.0.3",
+      "path": "microsoft.extensions.configuration.fileextensions/9.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -516,15 +1646,15 @@
         "lib/net9.0/Microsoft.Extensions.Configuration.FileExtensions.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.xml",
-        "microsoft.extensions.configuration.fileextensions.9.0.3.nupkg.sha512",
+        "microsoft.extensions.configuration.fileextensions.9.0.4.nupkg.sha512",
         "microsoft.extensions.configuration.fileextensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.Configuration.Json/9.0.3": {
-      "sha512": "mjkp3ZwynNacZk4uq93I0DyCY48FZmi3yRV0xlfeDuWh44KcDunPXHwt8IWr4kL7cVM6eiFVe6YTJg97KzUAUA==",
+    "Microsoft.Extensions.Configuration.Json/9.0.4": {
+      "sha512": "vVXI70CgT/dmXV3MM+n/BR2rLXEoAyoK0hQT+8MrbCMuJBiLRxnTtSrksNiASWCwOtxo/Tyy7CO8AGthbsYxnw==",
       "type": "package",
-      "path": "microsoft.extensions.configuration.json/9.0.3",
+      "path": "microsoft.extensions.configuration.json/9.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -546,15 +1676,15 @@
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.Json.xml",
         "lib/netstandard2.1/Microsoft.Extensions.Configuration.Json.dll",
         "lib/netstandard2.1/Microsoft.Extensions.Configuration.Json.xml",
-        "microsoft.extensions.configuration.json.9.0.3.nupkg.sha512",
+        "microsoft.extensions.configuration.json.9.0.4.nupkg.sha512",
         "microsoft.extensions.configuration.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.FileProviders.Abstractions/9.0.3": {
-      "sha512": "umczZ3+QPpzlrW/lkvy+IB0p52+qZ5w++aqx2lTCMOaPKzwcbVdrJgiQ3ajw5QWBp7gChLUiCYkSlWUpfjv24g==",
+    "Microsoft.Extensions.FileProviders.Abstractions/9.0.4": {
+      "sha512": "gQN2o/KnBfVk6Bd71E2YsvO5lsqrqHmaepDGk+FB/C4aiQY9B0XKKNKfl5/TqcNOs9OEithm4opiMHAErMFyEw==",
       "type": "package",
-      "path": "microsoft.extensions.fileproviders.abstractions/9.0.3",
+      "path": "microsoft.extensions.fileproviders.abstractions/9.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -574,15 +1704,15 @@
         "lib/net9.0/Microsoft.Extensions.FileProviders.Abstractions.xml",
         "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.xml",
-        "microsoft.extensions.fileproviders.abstractions.9.0.3.nupkg.sha512",
+        "microsoft.extensions.fileproviders.abstractions.9.0.4.nupkg.sha512",
         "microsoft.extensions.fileproviders.abstractions.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.FileProviders.Physical/9.0.3": {
-      "sha512": "th2+tQBV5oWjgKhip9GjiIv2AEK3QvfAO3tZcqV3F3dEt5D6Gb411RntCj1+8GS9HaRRSxjSGx/fCrMqIjkb1Q==",
+    "Microsoft.Extensions.FileProviders.Physical/9.0.4": {
+      "sha512": "qkQ9V7KFZdTWNThT7ke7E/Jad38s46atSs3QUYZB8f3thBTrcrousdY4Y/tyCtcH5YjsPSiByjuN+L8W/ThMQg==",
       "type": "package",
-      "path": "microsoft.extensions.fileproviders.physical/9.0.3",
+      "path": "microsoft.extensions.fileproviders.physical/9.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -602,15 +1732,15 @@
         "lib/net9.0/Microsoft.Extensions.FileProviders.Physical.xml",
         "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.dll",
         "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.xml",
-        "microsoft.extensions.fileproviders.physical.9.0.3.nupkg.sha512",
+        "microsoft.extensions.fileproviders.physical.9.0.4.nupkg.sha512",
         "microsoft.extensions.fileproviders.physical.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.FileSystemGlobbing/9.0.3": {
-      "sha512": "Rec77KHk4iNpFznHi5/6wF3MlUDcKqg26t8gRYbUm1PSukZ4B6mrXpZsJSNOiwyhhQVkjYbaoZxi5XJgRQ5lFg==",
+    "Microsoft.Extensions.FileSystemGlobbing/9.0.4": {
+      "sha512": "05Lh2ItSk4mzTdDWATW9nEcSybwprN8Tz42Fs5B+jwdXUpauktdAQUI1Am4sUQi2C63E5hvQp8gXvfwfg9mQGQ==",
       "type": "package",
-      "path": "microsoft.extensions.filesystemglobbing/9.0.3",
+      "path": "microsoft.extensions.filesystemglobbing/9.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -630,15 +1760,15 @@
         "lib/net9.0/Microsoft.Extensions.FileSystemGlobbing.xml",
         "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll",
         "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.xml",
-        "microsoft.extensions.filesystemglobbing.9.0.3.nupkg.sha512",
+        "microsoft.extensions.filesystemglobbing.9.0.4.nupkg.sha512",
         "microsoft.extensions.filesystemglobbing.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.Primitives/9.0.3": {
-      "sha512": "yCCJHvBcRyqapMSNzP+kTc57Eaavq2cr5Tmuil6/XVnipQf5xmskxakSQ1enU6S4+fNg3sJ27WcInV64q24JsA==",
+    "Microsoft.Extensions.Primitives/9.0.4": {
+      "sha512": "SPFyMjyku1nqTFFJ928JAMd0QnRe4xjE7KeKnZMWXf3xk+6e0WiOZAluYtLdbJUXtsl2cCRSi8cBquJ408k8RA==",
       "type": "package",
-      "path": "microsoft.extensions.primitives/9.0.3",
+      "path": "microsoft.extensions.primitives/9.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -658,9 +1788,39 @@
         "lib/net9.0/Microsoft.Extensions.Primitives.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Primitives.xml",
-        "microsoft.extensions.primitives.9.0.3.nupkg.sha512",
+        "microsoft.extensions.primitives.9.0.4.nupkg.sha512",
         "microsoft.extensions.primitives.nuspec",
         "useSharedDesignerContext.txt"
+      ]
+    },
+    "Newtonsoft.Json/13.0.3": {
+      "sha512": "HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/net6.0/Newtonsoft.Json.dll",
+        "lib/net6.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
       ]
     },
     "System.Buffers/4.5.1": {
@@ -719,10 +1879,52 @@
         "version.txt"
       ]
     },
-    "System.IO.Pipelines/9.0.3": {
-      "sha512": "aP1Qh9llcEmo0qN+VKvVDHFMe5Cqpfb1VjhBO7rjmxCXtLs3IfVSOiNqqLBZ/4Qbcr4J0SDdJq9S7EKAGpnwEA==",
+    "System.Drawing.Common/9.0.4": {
+      "sha512": "SbtusMUT1bCxZ14904ZPo2GZyelze0rwUni9wXrp8KX9Zlsda8idqpxra1RBvOA85WM0wW+fCI4GLrlCTYiE6A==",
       "type": "package",
-      "path": "system.io.pipelines/9.0.3",
+      "path": "system.drawing.common/9.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Drawing.Common.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Drawing.Common.targets",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net462/System.Drawing.Common.dll",
+        "lib/net462/System.Drawing.Common.pdb",
+        "lib/net462/System.Drawing.Common.xml",
+        "lib/net8.0/System.Drawing.Common.dll",
+        "lib/net8.0/System.Drawing.Common.pdb",
+        "lib/net8.0/System.Drawing.Common.xml",
+        "lib/net8.0/System.Private.Windows.Core.dll",
+        "lib/net8.0/System.Private.Windows.Core.xml",
+        "lib/net9.0/System.Drawing.Common.dll",
+        "lib/net9.0/System.Drawing.Common.pdb",
+        "lib/net9.0/System.Drawing.Common.xml",
+        "lib/net9.0/System.Private.Windows.Core.dll",
+        "lib/net9.0/System.Private.Windows.Core.xml",
+        "lib/netstandard2.0/System.Drawing.Common.dll",
+        "lib/netstandard2.0/System.Drawing.Common.pdb",
+        "lib/netstandard2.0/System.Drawing.Common.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "system.drawing.common.9.0.4.nupkg.sha512",
+        "system.drawing.common.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.IO.Pipelines/9.0.4": {
+      "sha512": "luF2Xba+lTe2GOoNQdZLe8q7K6s7nSpWZl9jIwWNMszN4/Yv0lmxk9HISgMmwdyZ83i3UhAGXaSY9o6IJBUuuA==",
+      "type": "package",
+      "path": "system.io.pipelines/9.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -742,7 +1944,7 @@
         "lib/net9.0/System.IO.Pipelines.xml",
         "lib/netstandard2.0/System.IO.Pipelines.dll",
         "lib/netstandard2.0/System.IO.Pipelines.xml",
-        "system.io.pipelines.9.0.3.nupkg.sha512",
+        "system.io.pipelines.9.0.4.nupkg.sha512",
         "system.io.pipelines.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -860,10 +2062,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Text.Encodings.Web/9.0.3": {
-      "sha512": "5L+iI4fBMtGwt4FHLQh40/rgdbxnw6lHaLkR3gbaHG97TohzUv+z/oP03drsTR1lKCLhOkp40cFnHYOQLtpT5A==",
+    "System.Text.Encodings.Web/9.0.4": {
+      "sha512": "V+5cCPpk1S2ngekUs9nDrQLHGiWFZMg8BthADQr+Fwi59a8DdHFu26S2oi9Bfgv+d67bqmkPqctJXMEXiimXUg==",
       "type": "package",
-      "path": "system.text.encodings.web/9.0.3",
+      "path": "system.text.encodings.web/9.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -887,15 +2089,15 @@
         "runtimes/browser/lib/net8.0/System.Text.Encodings.Web.xml",
         "runtimes/browser/lib/net9.0/System.Text.Encodings.Web.dll",
         "runtimes/browser/lib/net9.0/System.Text.Encodings.Web.xml",
-        "system.text.encodings.web.9.0.3.nupkg.sha512",
+        "system.text.encodings.web.9.0.4.nupkg.sha512",
         "system.text.encodings.web.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Text.Json/9.0.3": {
-      "sha512": "r2JRkLjsYrq5Dpo7+y3Wa73OfirZPdVhxiTJWwZ+oJM7FOAe0LkM3GlH+pgkNRdd1G1kwUbmRCdmh4uoaWwu1g==",
+    "System.Text.Json/9.0.4": {
+      "sha512": "pYtmpcO6R3Ef1XilZEHgXP2xBPVORbYEzRP7dl0IAAbN8Dm+kfwio8aCKle97rAWXOExr292MuxWYurIuwN62g==",
       "type": "package",
-      "path": "system.text.json/9.0.3",
+      "path": "system.text.json/9.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -958,7 +2160,7 @@
         "lib/net9.0/System.Text.Json.xml",
         "lib/netstandard2.0/System.Text.Json.dll",
         "lib/netstandard2.0/System.Text.Json.xml",
-        "system.text.json.9.0.3.nupkg.sha512",
+        "system.text.json.9.0.4.nupkg.sha512",
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -1004,8 +2206,12 @@
   "projectFileDependencyGroups": {
     "net7.0": [
       "Azure.AI.TextAnalytics >= 5.3.0",
-      "Microsoft.Extensions.Configuration >= 9.0.3",
-      "Microsoft.Extensions.Configuration.Json >= 9.0.3"
+      "Azure.AI.Vision.ImageAnalysis >= 0.15.1-beta.1",
+      "Microsoft.CognitiveServices.Speech >= 1.31.0",
+      "Microsoft.Extensions.Configuration >= 9.0.4",
+      "Microsoft.Extensions.Configuration.Json >= 9.0.4",
+      "Newtonsoft.Json >= 13.0.3",
+      "System.Drawing.Common >= 9.0.4"
     ]
   },
   "packageFolders": {
@@ -1014,11 +2220,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\yms84\\OneDrive\\Yago\\Informatica\\Experis\\Desarrollo Junior Cloud Azure\\Proyectos\\Proyecto04\\Entregas\\Parceros\\AIServicesSolutions\\AIServicesSolutions.csproj",
+      "projectUniqueName": "C:\\Users\\yms84\\OneDrive\\Desktop\\C#\\AIServicesSolutions\\AIServicesSolutions.csproj",
       "projectName": "AIServicesSolutions",
-      "projectPath": "C:\\Users\\yms84\\OneDrive\\Yago\\Informatica\\Experis\\Desarrollo Junior Cloud Azure\\Proyectos\\Proyecto04\\Entregas\\Parceros\\AIServicesSolutions\\AIServicesSolutions.csproj",
+      "projectPath": "C:\\Users\\yms84\\OneDrive\\Desktop\\C#\\AIServicesSolutions\\AIServicesSolutions.csproj",
       "packagesPath": "C:\\Users\\yms84\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\yms84\\OneDrive\\Yago\\Informatica\\Experis\\Desarrollo Junior Cloud Azure\\Proyectos\\Proyecto04\\Entregas\\Parceros\\AIServicesSolutions\\obj\\",
+      "outputPath": "C:\\Users\\yms84\\OneDrive\\Desktop\\C#\\AIServicesSolutions\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\yms84\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -1055,13 +2261,29 @@
             "target": "Package",
             "version": "[5.3.0, )"
           },
+          "Azure.AI.Vision.ImageAnalysis": {
+            "target": "Package",
+            "version": "[0.15.1-beta.1, )"
+          },
+          "Microsoft.CognitiveServices.Speech": {
+            "target": "Package",
+            "version": "[1.31.0, )"
+          },
           "Microsoft.Extensions.Configuration": {
             "target": "Package",
-            "version": "[9.0.3, )"
+            "version": "[9.0.4, )"
           },
           "Microsoft.Extensions.Configuration.Json": {
             "target": "Package",
-            "version": "[9.0.3, )"
+            "version": "[9.0.4, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.3, )"
+          },
+          "System.Drawing.Common": {
+            "target": "Package",
+            "version": "[9.0.4, )"
           }
         },
         "imports": [

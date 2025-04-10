@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\yms84\\OneDrive\\Yago\\Informatica\\Experis\\Desarrollo Junior Cloud Azure\\Proyectos\\Proyecto04\\Entregas\\Parceros\\AIServicesSolutions\\AIServicesSolutions.csproj": {}
+    "C:\\Users\\yms84\\OneDrive\\Desktop\\C#\\AIServicesSolutions\\AIServicesSolutions.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yms84\\OneDrive\\Yago\\Informatica\\Experis\\Desarrollo Junior Cloud Azure\\Proyectos\\Proyecto04\\Entregas\\Parceros\\AIServicesSolutions\\AIServicesSolutions.csproj": {
+    "C:\\Users\\yms84\\OneDrive\\Desktop\\C#\\AIServicesSolutions\\AIServicesSolutions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yms84\\OneDrive\\Yago\\Informatica\\Experis\\Desarrollo Junior Cloud Azure\\Proyectos\\Proyecto04\\Entregas\\Parceros\\AIServicesSolutions\\AIServicesSolutions.csproj",
+        "projectUniqueName": "C:\\Users\\yms84\\OneDrive\\Desktop\\C#\\AIServicesSolutions\\AIServicesSolutions.csproj",
         "projectName": "AIServicesSolutions",
-        "projectPath": "C:\\Users\\yms84\\OneDrive\\Yago\\Informatica\\Experis\\Desarrollo Junior Cloud Azure\\Proyectos\\Proyecto04\\Entregas\\Parceros\\AIServicesSolutions\\AIServicesSolutions.csproj",
+        "projectPath": "C:\\Users\\yms84\\OneDrive\\Desktop\\C#\\AIServicesSolutions\\AIServicesSolutions.csproj",
         "packagesPath": "C:\\Users\\yms84\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yms84\\OneDrive\\Yago\\Informatica\\Experis\\Desarrollo Junior Cloud Azure\\Proyectos\\Proyecto04\\Entregas\\Parceros\\AIServicesSolutions\\obj\\",
+        "outputPath": "C:\\Users\\yms84\\OneDrive\\Desktop\\C#\\AIServicesSolutions\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\yms84\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -48,13 +48,29 @@
               "target": "Package",
               "version": "[5.3.0, )"
             },
+            "Azure.AI.Vision.ImageAnalysis": {
+              "target": "Package",
+              "version": "[0.15.1-beta.1, )"
+            },
+            "Microsoft.CognitiveServices.Speech": {
+              "target": "Package",
+              "version": "[1.31.0, )"
+            },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
-              "version": "[9.0.3, )"
+              "version": "[9.0.4, )"
             },
             "Microsoft.Extensions.Configuration.Json": {
               "target": "Package",
-              "version": "[9.0.3, )"
+              "version": "[9.0.4, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[9.0.4, )"
             }
           },
           "imports": [
