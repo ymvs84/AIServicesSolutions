@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\yms84\\OneDrive\\Desktop\\C#\\AIServicesSolutions\\AIServicesSolutions.csproj": {}
+    "C:\\Users\\macin\\Desktop\\Proyectos\\AIServicesSolutions\\AIServicesSolutions.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yms84\\OneDrive\\Desktop\\C#\\AIServicesSolutions\\AIServicesSolutions.csproj": {
+    "C:\\Users\\macin\\Desktop\\Proyectos\\AIServicesSolutions\\AIServicesSolutions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yms84\\OneDrive\\Desktop\\C#\\AIServicesSolutions\\AIServicesSolutions.csproj",
+        "projectUniqueName": "C:\\Users\\macin\\Desktop\\Proyectos\\AIServicesSolutions\\AIServicesSolutions.csproj",
         "projectName": "AIServicesSolutions",
-        "projectPath": "C:\\Users\\yms84\\OneDrive\\Desktop\\C#\\AIServicesSolutions\\AIServicesSolutions.csproj",
-        "packagesPath": "C:\\Users\\yms84\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yms84\\OneDrive\\Desktop\\C#\\AIServicesSolutions\\obj\\",
+        "projectPath": "C:\\Users\\macin\\Desktop\\Proyectos\\AIServicesSolutions\\AIServicesSolutions.csproj",
+        "packagesPath": "C:\\Users\\macin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\macin\\Desktop\\Proyectos\\AIServicesSolutions\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\yms84\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\macin\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -107,7 +107,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

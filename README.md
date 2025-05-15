@@ -88,6 +88,11 @@ dotnet run
 
 Al ejecutar la aplicación, se mostrará un menú con las opciones disponibles para cada release.
 
+## Autores
+- [Aitor Garrido] (https://github.com/AitorGarYeb99)
+- [Yago Menendez] (https://github.com/ymvs84)
+- [Carlos Pantoja] (https://github.com/pantoja99)
+
 ## Notas Adicionales
 
 - Para la Release 2, asegúrese de que su micrófono esté configurado y funcionando correctamente
